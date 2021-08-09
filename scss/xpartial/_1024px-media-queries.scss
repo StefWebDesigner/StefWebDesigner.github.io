@@ -1,0 +1,41 @@
+// // /* ============================================= */
+// // /*              @Media Breakpoints               */
+// // /* ============================================= */
+
+// @media only screen and (min-width: 1024px) {
+
+// // //===============================================
+// // //Groups Font's
+
+// //   //===============================================
+
+// .grid {
+//     // min-width: 1024px;    
+//     grid-template-rows: 70px 1fr;
+//     grid-template-columns: 70px 1fr;
+//     grid-template-areas:
+//         "header header"
+//          "nav main";
+// }
+
+// header {
+//     background-color: $main-purple;
+//     grid-area: header;
+// }
+
+// nav {
+//     background-color: $secondary-purple;
+//     grid-area: nav;
+// }
+
+// main {
+//     background-color: $defult-white;
+//     grid-area: main;
+// }
+
+
+// // //========================//
+// // // HEADER (FLEX) PROPERTIES //
+// // //========================//
+// // //(TITLE/BELL ICON/ BREAKLINE/ME)
+// }

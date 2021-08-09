@@ -1,0 +1,100 @@
+
+//========================================
+//============= FLEX SECTION =============
+//========================================
+
+
+// header {
+//     margin: 0;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-evenly;
+//     //THIS CAN NEVER BE CENTERED WITH THE CONTAINER
+//     // margin: auto;
+// }
+
+//======== GENERAL MAIN FLEX PROPERTIES =============
+
+header, nav, main, footer, aside {
+    margin: 0;
+    display: flex;
+    // justify-content: center;
+}
+
+//======== HEADER =============
+
+
+//======== NAVIGATION =============
+
+.nav--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: stretch;
+    margin: auto;
+}
+
+.nav--navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+//======== MAIN =============
+
+main {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.main--content-container,
+.main--content-header, 
+.main--project-container, 
+.main--project-idv-group,
+.main--project-button {
+    display: flex;
+}
+
+//-------- PROJECT SECTIONS -----------
+
+.main--project-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.main--project-idv-group {
+    flex-direction: column;
+}
+
+.main--project-button-group {
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+//-------- FORM SECTIONS -----------
+
+.aside--form-socialmedia-flex-container,
+.aside--form--container,
+.aside--form-title,
+form {
+    display: flex;
+}
+
+.aside--form--container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+form {
+    flex-direction: column;
+}
+
+//-------- SOCIAL MEDIA SECTIONS -----------
+
+
+
+//-------- FOOTER SECTIONS -----------
+
