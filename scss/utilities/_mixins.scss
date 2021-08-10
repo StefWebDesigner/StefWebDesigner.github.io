@@ -1,14 +1,10 @@
 //========== MIXINS =============
 
+@mixin background {
+    background: rgb(18,128,130);
+    background: linear-gradient(0deg, rgba(18,128,130,1) 1%, rgba(4,43,77,1) 37%);
+}
 
-// @mixin main-border-style {
-//     border: 1px solid $main-purple;
-//     border-radius: 5px;    
-// }
-
-// @mixin hover-border-style {
-//     border: 1px solid black;
-//     border-radius: 5px;
-//     color: $defult-white;
-        
-//     }
+@mixin main-border-style {
+    border-radius: 10px;
+}

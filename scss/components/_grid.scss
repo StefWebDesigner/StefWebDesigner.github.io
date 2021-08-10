@@ -5,31 +5,32 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 120px 1fr 40px;
+    grid-template-rows: 110px 160px 1fr 40px;
     grid-template-areas:  
     "header"
     "nav"
     "main"
     "footer";
+    @include background;
 }
 
 header {
-    background-color: blue;
+    // background-color: blue;
     grid-area: header;
 }
 
 nav {
-    background-color: red;
+    // background-color: red;
     grid-area: nav;
 }
 
 main {
-    background-color: pink;
+    // background-color: pink;
     grid-area: main;
 }
 
 footer {
-    background-color: purple;
+    // background-color: purple;
     grid-area: footer;
 }
 

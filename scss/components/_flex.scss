@@ -15,7 +15,7 @@
 
 //======== GENERAL MAIN FLEX PROPERTIES =============
 
-header, nav, main, footer, aside {
+header, nav, main, footer {
     margin: 0;
     display: flex;
     // justify-content: center;
@@ -75,26 +75,30 @@ main {
 
 //-------- FORM SECTIONS -----------
 
-.aside--form-socialmedia-flex-container,
-.aside--form--container,
-.aside--form-title,
+// .form-socialmedia-flex-container,
+// .form--container,
+// .form-title,
 form {
     display: flex;
+    flex-direction: column;
+    gap:-5px;
+
 }
 
-.aside--form--container {
+.form--container {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
 }
 
-form {
-    flex-direction: column;
-}
-
 //-------- SOCIAL MEDIA SECTIONS -----------
 
-
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: -23px;
+}
 
 //-------- FOOTER SECTIONS -----------
 

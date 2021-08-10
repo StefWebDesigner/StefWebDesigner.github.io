@@ -6,6 +6,7 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+  color: $default-white;
 }
 
 
@@ -39,6 +40,12 @@ a .main--project-button {
 }
 
 //-------- FORM SECTION-----------
+
+label {
+  text-align: center;
+  margin: auto;
+
+}
 
 
 //-------- SOCIAL MEDIA SECTION -----------

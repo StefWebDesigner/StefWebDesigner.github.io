@@ -4,7 +4,55 @@
   
 
 .main--project-button {
-    margin: auto;
-    width: 97%;
+  margin: auto;
+  width: 85%;
+  background-color: #0780fa;
+  @include main-border-style;
+}
+
+a .main--project-button {
+  justify-content: center;
+  color: #17f4a8;
+  text-decoration-style: none;
 
 }
+
+//========= BUTTON TRANSITIONS # 1 =============
+// Particles Popper Effect
+// https://codemyui.com/square-emoji-shadow-and-line-particles-popper-effect-on-button-click/
+
+
+//========= BUTTON TRANSITIONS =============
+
+particle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  // button {
+  //   padding: 20px;
+  //   margin: 10px;
+  //   align-self: center;
+  // }
+  .transition {
+    padding: 10px;
+    margin: 10px;
+    align-self: center;
+    background-color: $chrome-grey;
+    // width: 100%;
+    @include main-border-style;
+  }
+  .preloader {
+    position: absolute;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png);
+  }
+
+
+  //========= BUTTON TRANSITIONS # 2 =============
+
+  //https://omprakash-76044.medium.com/attractive-glowing-neon-css-buttons-34b4c4bbe3a6

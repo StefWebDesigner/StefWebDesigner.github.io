@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
+  color: #eee;
 }
 
 .header-website-title {
@@ -21,6 +22,11 @@ a .main--project-button {
   text-align: center;
 }
 
+label {
+  text-align: center;
+  margin: auto;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -28,9 +34,58 @@ a .main--project-button {
   padding: 0;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
 .main--project-button {
   margin: auto;
-  width: 97%;
+  width: 85%;
+  background-color: #0780fa;
+  border-radius: 10px;
+}
+
+a .main--project-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #17f4a8;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+}
+
+particle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.transition {
+  padding: 10px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #94989c;
+  border-radius: 10px;
+}
+
+.preloader {
+  position: absolute;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png);
 }
 
 .grid {
@@ -39,40 +94,65 @@ a .main--project-button {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 100px 120px 1fr 40px;
-      grid-template-rows: 100px 120px 1fr 40px;
+  -ms-grid-rows: 110px 160px 1fr 40px;
+      grid-template-rows: 110px 160px 1fr 40px;
       grid-template-areas: "header" "nav" "main" "footer";
+  background: #128082;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #128082), color-stop(37%, #042b4d));
+  background: linear-gradient(0deg, #128082 1%, #042b4d 37%);
 }
 
 header {
-  background-color: blue;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
 }
 
 nav {
-  background-color: red;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
 }
 
 main {
-  background-color: pink;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: main;
 }
 
 footer {
-  background-color: purple;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: footer;
 }
 
-header, nav, main, footer, aside {
+.sm--bigger-svg {
+  width: 50px;
+}
+
+.sm--smaller-svg {
+  width: 50px;
+  height: 50px;
+}
+
+label, input, textarea {
+  text-align: center;
+  margin: auto;
+}
+
+input, textarea {
+  width: 85%;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 70px;
+}
+
+header, nav, main, footer {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,16 +232,18 @@ main {
           justify-content: space-evenly;
 }
 
-.aside--form-socialmedia-flex-container,
-.aside--form--container,
-.aside--form-title,
 form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: -5px;
 }
 
-.aside--form--container {
+.form--container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -172,11 +254,17 @@ form {
   gap: 10px;
 }
 
-form {
-  -webkit-box-orient: vertical;
+.social-media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: -23px;
 }
 
 a .nav--button {
