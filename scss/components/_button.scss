@@ -6,15 +6,93 @@
 .main--project-button {
   margin: auto;
   width: 85%;
-  background-color: #0780fa;
+  padding: 10px;
+  background-color: $button-color;
   @include main-border-style;
 }
 
 a .main--project-button {
   justify-content: center;
-  color: #17f4a8;
+  color: $text-color;
   text-decoration-style: none;
+}
 
+
+//============DROP DOWN SECTION========
+
+/* DROP BUTTON CODE */
+.button--dropdown {
+  @include main-border-style;
+  /* BACKGROUND COLOR */
+  background-color: $button-color;
+  /* FONT COLOR */
+  color: $text-color;
+  /* PADDING FOR THE OVERALL BUTTON */
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* FONT SIZE FOR THE BUTTON */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* DROP DOWN HOVER EFFECT */
+.button--dropdown:hover, .button--dropdown:focus {
+  background-color: $text-color;
+  color: $button-color;
+}
+
+.button--dropdown-container {
+   /* SET THE POSITION FOR DROP DOWN CONTENT */
+  position: relative;
+  display: inline-block;
+}
+
+/*  DROP DOWN CONTENT SECTION*/
+.button--dropdown-content {
+  display: none;
+  /* CHOSE ONE><><><><><> */
+     /* IF ABSOLUTE > IT COVERS OVER IT */
+     /* position: absolute; */
+     /* IF RELATIVE IT PUSHES IT DOWN */
+     position: relative;
+     /* <><><><><><><>><><><><>>< */
+  /*CHANGES COLOR OF THE DROP DOWN MENU */
+  background-color: $chrome-grey;
+  /* CONTROLS THE WIDTH OF THE DROP MENU */
+  min-width: 160px;
+  /* ******************************************* */
+  /* ******DELETE THIS CODE IF USING LINKS****** */
+  /* ******************************************* */
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+    /**********************************************/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* EFFECTS THE LINKS */
+// .button--dropdown-content a {
+//   /* COLOR FONT OF THE CHILDREN ELEMENT OF THE MENU */
+//   color: black;
+//   /* PADDING FOR THE CHILDREN ELEMENT */
+//   padding: 12px 16px;
+//   text-decoration: none;
+//   display: block;
+// }
+
+/* THIS TARGETS THE CHILD ELEMENTS'S HOVER EFFECT INSIDE OF A MENU  */
+.button--dropdown-content a:hover {
+  background-color: green
+}
+
+/* THE SHOW CLASS*/
+.show {
+   display:block;
 }
 
 //========= BUTTON TRANSITIONS # 1 =============

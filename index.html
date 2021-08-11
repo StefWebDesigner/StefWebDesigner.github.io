@@ -69,17 +69,22 @@
 		<div class="main--project-container">
 			<!-- INDIVIDAL PROJECT SECTIONS -->
 			<div class="main--project-idv-group">
-				<img src="" alt="" class="main--project-preview">
+				<img src="images/project1-thumb.png" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 1</h3>
 					<p class="main--project-description">
-						Project description
+						<!-- Project description -->
 					</p>
 				</div>
 				<div class="main--project-button-group">
-					<a href="">
-						<button class="main--project-button"> Details</button>
-					</a>
+					<div class="button--dropdown-container">
+						<button onclick="myFunction()" class="button--dropdown">Details
+						</button>
+						<div id="myDropdown" class="button--dropdown-content">
+							<p> An interactive website using cards and hover effects to make an engaging layout and represent my CV???? 
+							</p>
+						</div>
+					</div>					
 					<a href="">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
@@ -93,14 +98,19 @@
 				<img src="" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 2</h3>
-					<p class="main--project-description">
+					<!-- <p class="main--project-description">
 						Project description
-					</p>
+					</p> -->
 				</div>
 				<div class="main--project-button-group">
-					<a href="">
-						<button class="main--project-button"> Details</button>
-					</a>
+					<div class="button--dropdown-container">
+						<button onclick="myFunction()" class="button--dropdown">Details
+						</button>
+						<div id="myDropdown" class="button--dropdown-content">
+							<p> Project 2 description 
+							</p>
+						</div>
+					</div>	
 					<a href="">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
@@ -285,7 +295,7 @@
 </footer>
 
 	<script src="javascript/pop-button.js"></script>
-	<!-- <script src="javascript/app.js"> </script> -->
+	<script src="javascript/app.js"> </script>
 	
 </body>
 
