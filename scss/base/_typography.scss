@@ -7,26 +7,64 @@
 * {
   font-family: 'Roboto', sans-serif;
   color: $default-white;
+  margin: 0;
+  padding: 0;
 }
 
+//====== GENERAL ======
+
+a {
+  text-decoration: none;
+}
 
 // ===== HEADER ======
 
 .header-website-title {
   font-size: 30px;
   text-align: center;
+  color: $text-color;
 
 }
+
+
+//======  BUTTON IN GENERAL ====
+
+.main--project-button, button.button--dropdown, a .nav--button {
+  font-size: 25px;
+  text-align: center;
+}
+
 
 // ===== NAVIGATION ======
 
 a .nav--button {
-  font-size: 20px;
+  text-align: center;
+  // list-style-type: none;
+  // text-decoration-style: none;
+  color: $text-color;
 }
 
 // ===== MAIN ======
 
 //-------- PROJECT SECTION-----------
+
+
+.main--title-container {
+  margin-top: 5px;
+  margin-left: 10px;
+
+}
+
+.main--title-container {
+  font-size: 32px;
+
+
+}
+
+.main--project-title {
+  font-size: 30px;
+
+}
 
 .main--title-container,
 .main--project-title,
@@ -34,23 +72,19 @@ a .nav--button {
     text-align: center;
 }
 
-
-
-
-
 a .main--project-button {
   text-align: center;
-
 }
+
+
 
 //-------- FORM SECTION-----------
 
 label {
-  text-align: center;
   margin: auto;
-
+  text-align: center;
+  color: $text-color;
 }
-
 
 //-------- SOCIAL MEDIA SECTION -----------
 

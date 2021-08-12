@@ -8,3 +8,8 @@
 @mixin main-border-style {
     border-radius: 10px;
 }
+
+@mixin button-background {
+    background: rgb(150,193,237);
+    background: linear-gradient(90deg, rgba(150,193,237,1) 0%, rgba(7,128,250,1) 100%);
+}

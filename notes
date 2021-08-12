@@ -1,2 +1,43 @@
+OBSERVATIONS:
+- If a text is not centering with text-align:center its because 
+it's flex
+
+TOP PRIORITIES:
+- Complete mobile view in a reasonably decent state by Thursday
+- Add repo to links
+
+
+ERRORS/PROBLEMS:
+(MOBILE)
+- button--dropdown > js > it only targets the first drop down container
+
+REPO UDPATES NOTES:
+- main--project-title > change the font to be bigger + remove the top hr line
+- some of project pictures > some skewd looking
+- button--dropdown > font not changing/not centering
+- a .main--project-button > can't remove the link underline styling
+
+
+
+THINGS TO ADD:
+- add an animation behind the title page
+- add my special heading title font
+- https://www.w3schools.com/howto/howto_js_dropdown.asp
+    > a search drop down menu to quick select the project desired to see
+
+
+https://codemyui.com/square-emoji-shadow-and-line-particles-popper-effect-on-button-click/
+
+https://codemyui.com/square-emoji-shadow-and-line-particles-popper-effect-on-button-click/
+
 THINGS TO COMPLETE FOR FINISHING:
 - make it aris accessible to leave a good impression
+
+
+
+
+
+https://codepen.io/robson_muniz/pen/BaygbQY
+
+
+https://omprakash-76044.medium.com/attractive-glowing-neon-css-buttons-34b4c4bbe3a6

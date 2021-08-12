@@ -10,14 +10,15 @@ label, input, textarea {
 
 input, textarea {
     width: 85%;
+    @include main-border-style;
 }
 
 input {
-    height: 30px;
+    height: 40px;
 }
 
 textarea {
-    height: 70px;
+    height: 80px;
 }
 
 

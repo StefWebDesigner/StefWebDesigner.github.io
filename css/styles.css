@@ -1,15 +1,41 @@
 * {
   font-family: 'Roboto', sans-serif;
   color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header-website-title {
   font-size: 30px;
   text-align: center;
+  color: #17f4a8;
+}
+
+.main--project-button, button.button--dropdown, a .nav--button {
+  font-size: 25px;
+  text-align: center;
 }
 
 a .nav--button {
-  font-size: 20px;
+  text-align: center;
+  color: #17f4a8;
+}
+
+.main--title-container {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.main--title-container {
+  font-size: 32px;
+}
+
+.main--project-title {
+  font-size: 30px;
 }
 
 .main--title-container,
@@ -23,8 +49,9 @@ a .main--project-button {
 }
 
 label {
-  text-align: center;
   margin: auto;
+  text-align: center;
+  color: #17f4a8;
 }
 
 * {
@@ -47,11 +74,26 @@ body {
   text-align: center;
 }
 
+hr {
+  background-color: #17f4a8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .main--project-button {
   margin: auto;
   width: 85%;
-  background-color: #0780fa;
+  padding: 10px;
+  background: #96c1ed;
+  background: -webkit-gradient(linear, left top, right top, from(#96c1ed), to(#0780fa));
+  background: linear-gradient(90deg, #96c1ed 0%, #0780fa 100%);
   border-radius: 10px;
+  border-bottom: 4px solid #17f4a8;
+  cursor: pointer;
+}
+
+.main--project-button:hover {
+  border-color: #94989c;
 }
 
 a .main--project-button {
@@ -61,6 +103,75 @@ a .main--project-button {
   color: #17f4a8;
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
+}
+
+a .nav--button {
+  border-bottom: 4px solid #17f4a8;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a .nav--button:hover {
+  border-color: #94989c;
+}
+
+/* DROP BUTTON CODE */
+.button--dropdown {
+  margin: auto;
+  border-radius: 10px;
+  /* BACKGROUND COLOR */
+  background: #96c1ed;
+  background: -webkit-gradient(linear, left top, right top, from(#96c1ed), to(#0780fa));
+  background: linear-gradient(90deg, #96c1ed 0%, #0780fa 100%);
+  /* FONT COLOR */
+  color: #17f4a8;
+  /* PADDING FOR THE OVERALL BUTTON */
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* FONT SIZE FOR THE BUTTON */
+  border: none;
+  cursor: pointer;
+}
+
+/* DROP DOWN HOVER EFFECT */
+.button--dropdown-container {
+  /* SET THE POSITION FOR DROP DOWN CONTENT */
+  position: relative;
+  display: inline-block;
+}
+
+/*  DROP DOWN CONTENT SECTION*/
+.button--dropdown-content {
+  display: none;
+  /* CHOSE ONE><><><><><> */
+  /* IF ABSOLUTE > IT COVERS OVER IT */
+  /* position: absolute; */
+  /* IF RELATIVE IT PUSHES IT DOWN */
+  position: relative;
+  /* <><><><><><><>><><><><>>< */
+  /*CHANGES COLOR OF THE DROP DOWN MENU */
+  background-color: #94989c;
+  /* CONTROLS THE WIDTH OF THE DROP MENU */
+  min-width: 160px;
+  /* ******************************************* */
+  /* ******DELETE THIS CODE IF USING LINKS****** /
+  /* ******************************************* */
+  /**********************************************/
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* EFFECTS THE LINKS */
+/* THIS TARGETS THE CHILD ELEMENTS'S HOVER EFFECT INSIDE OF A MENU  */
+.button--dropdown-content a:hover {
+  background-color: green;
+}
+
+/* THE SHOW CLASS*/
+.show {
+  display: block;
 }
 
 particle {
@@ -79,7 +190,9 @@ particle {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: #94989c;
+  background: #96c1ed;
+  background: -webkit-gradient(linear, left top, right top, from(#96c1ed), to(#0780fa));
+  background: linear-gradient(90deg, #96c1ed 0%, #0780fa 100%);
   border-radius: 10px;
 }
 
@@ -94,8 +207,8 @@ particle {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 110px 160px 1fr 40px;
-      grid-template-rows: 110px 160px 1fr 40px;
+  -ms-grid-rows: 230px 215px 1fr 40px;
+      grid-template-rows: 230px 215px 1fr 40px;
       grid-template-areas: "header" "nav" "main" "footer";
   background: #128082;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #128082), color-stop(37%, #042b4d));
@@ -126,6 +239,13 @@ footer {
   grid-area: footer;
 }
 
+.header--profile-pic {
+  width: 110px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 .sm--bigger-svg {
   width: 50px;
 }
@@ -135,6 +255,20 @@ footer {
   height: 50px;
 }
 
+path {
+  fill: white;
+}
+
+.main--project-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  border-radius: 360%;
+  margin: auto;
+  border: #17f4a8 solid 2px;
+}
+
 label, input, textarea {
   text-align: center;
   margin: auto;
@@ -142,14 +276,15 @@ label, input, textarea {
 
 input, textarea {
   width: 85%;
+  border-radius: 10px;
 }
 
 input {
-  height: 30px;
+  height: 40px;
 }
 
 textarea {
-  height: 70px;
+  height: 80px;
 }
 
 header, nav, main, footer {
@@ -198,10 +333,19 @@ main {
 .main--content-header,
 .main--project-container,
 .main--project-idv-group,
-.main--project-button {
+.main--project-button,
+.button--dropdown-container,
+.button--dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main--content-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main--project-container {
@@ -220,6 +364,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 10px;
 }
 
 .main--project-button-group {
@@ -232,6 +377,20 @@ main {
           justify-content: space-evenly;
 }
 
+.button--dropdown-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.button--dropdown {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form--container,
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,7 +410,7 @@ form {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  gap: 10px;
+  gap: 20px;
 }
 
 .social-media-container {
@@ -267,11 +426,16 @@ form {
   gap: -23px;
 }
 
-a .nav--button {
-  font-size: 20px;
-  text-align: center;
-  list-style-type: none;
-  -webkit-text-decoration-style: none;
-          text-decoration-style: none;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=styles.css.map */

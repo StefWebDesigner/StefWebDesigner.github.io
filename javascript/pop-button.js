@@ -36,6 +36,8 @@ function pop (e) {
       case 'square':
         particle.style.background = 'aqua';
         particle.style.border = '1px solid white';
+
+
         break;
       case 'emoji':
         particle.innerHTML = ['❤','🧡','💛','💚','💙','💜','🤎'][Math.floor(Math.random() * 7)];

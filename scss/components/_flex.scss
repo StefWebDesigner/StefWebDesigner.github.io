@@ -51,11 +51,18 @@ main {
 .main--content-header, 
 .main--project-container, 
 .main--project-idv-group,
-.main--project-button {
+.main--project-button,
+.button--dropdown-container,
+.button--dropdown {
     display: flex;
 }
 
 //-------- PROJECT SECTIONS -----------
+
+.main--content-container {
+    flex-direction: column;
+}
+
 
 .main--project-container {
     flex-direction: column;
@@ -73,11 +80,21 @@ main {
     justify-content: space-evenly;
 
 }
+//-------- DROP DOWN MENU ------------
+
+.button--dropdown-container {
+    flex-direction: column;
+
+}
+
+.button--dropdown {
+    justify-content: center;
+}
 
 //-------- FORM SECTIONS -----------
 
 // .form-socialmedia-flex-container,
-// .form--container,
+.form--container,
 // .form-title,
 form {
     display: flex;
@@ -89,7 +106,7 @@ form {
 .form--container {
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 20px;
 }
 
 //-------- SOCIAL MEDIA SECTIONS -----------
@@ -103,3 +120,8 @@ form {
 
 //-------- FOOTER SECTIONS -----------
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

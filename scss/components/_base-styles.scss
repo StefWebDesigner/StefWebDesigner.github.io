@@ -16,4 +16,11 @@ body {
         justify-content: center;
         // overflow: hidden;
         text-align: center;
-      }
+}
+
+hr {
+        background-color: $text-color;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+}

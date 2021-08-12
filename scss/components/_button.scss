@@ -7,8 +7,14 @@
   margin: auto;
   width: 85%;
   padding: 10px;
-  background-color: $button-color;
+  @include button-background;
   @include main-border-style;
+  border-bottom: 4px solid $text-color;
+  cursor: pointer;
+}
+
+.main--project-button:hover {
+  border-color: $chrome-grey;
 }
 
 a .main--project-button {
@@ -17,32 +23,52 @@ a .main--project-button {
   text-decoration-style: none;
 }
 
+a .nav--button {
+  border-bottom: 4px solid $text-color;
+@include main-border-style; 
+cursor: pointer;
+
+}
+
+a .nav--button:hover {
+  border-color: $chrome-grey;
+}
 
 //============DROP DOWN SECTION========
 
 /* DROP BUTTON CODE */
 .button--dropdown {
+  margin: auto;
   @include main-border-style;
+  // border-bottom: 4px solid $text-color;
+
   /* BACKGROUND COLOR */
-  background-color: $button-color;
+  @include button-background;
   /* FONT COLOR */
   color: $text-color;
   /* PADDING FOR THE OVERALL BUTTON */
-  padding-left: 105px;
-  padding-right: 105px;
+  width: 85%;
+  // padding-left: 105px;
+  // padding-right: 105px;
   padding-top: 10px;
   padding-bottom: 10px;
   /* FONT SIZE FOR THE BUTTON */
-  font-size: 16px;
+  // font-size: 16px;
   border: none;
   cursor: pointer;
 }
 
+// .button--dropdown:hover {
+//   border-color: purple;
+
+// }
+
+
 /* DROP DOWN HOVER EFFECT */
-.button--dropdown:hover, .button--dropdown:focus {
-  background-color: $text-color;
-  color: $button-color;
-}
+// .button--dropdown:hover, .button--dropdown:focus {
+//   // background-color: $text-color;
+//   // color: $button-color;
+// }
 
 .button--dropdown-container {
    /* SET THE POSITION FOR DROP DOWN CONTENT */
@@ -64,7 +90,7 @@ a .main--project-button {
   /* CONTROLS THE WIDTH OF THE DROP MENU */
   min-width: 160px;
   /* ******************************************* */
-  /* ******DELETE THIS CODE IF USING LINKS****** */
+  /* ******DELETE THIS CODE IF USING LINKS****** /
   /* ******************************************* */
   // padding-top: 10px;
   // padding-bottom: 10px;
@@ -121,8 +147,7 @@ particle {
     padding: 10px;
     margin: 10px;
     align-self: center;
-    background-color: $chrome-grey;
-    // width: 100%;
+   @include button-background;
     @include main-border-style;
   }
   .preloader {
