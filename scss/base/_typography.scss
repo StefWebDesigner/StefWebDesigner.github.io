@@ -5,8 +5,8 @@
 //UNIVERSAL
 
 * {
-  font-family: 'Roboto', sans-serif;
-  color: $default-white;
+  font-family: 'Montserrat', sans-serif;
+  color: $text-color;
   margin: 0;
   padding: 0;
 }
@@ -15,6 +15,20 @@
 
 a {
   text-decoration: none;
+}
+
+.header-website-title, 
+.main--title-container, 
+.main--project-title, 
+.form-title, 
+.main--project-button,
+.nav-proj-button,
+a .header--button  {
+
+text-shadow: -1px 1px 0 , 
+  1px 1px 0  black, 
+  1px -1px 0 blue, 
+  -1px -1px 0  white ; 
 }
 
 // ===== HEADER ======
@@ -29,7 +43,7 @@ a {
 
 //======  BUTTON IN GENERAL ====
 
-.main--project-button, button.button--dropdown, a .nav--button {
+.main--project-button, button.button--dropdown, a .header--button {
   font-size: 25px;
   text-align: center;
 }
@@ -37,10 +51,8 @@ a {
 
 // ===== NAVIGATION ======
 
-a .nav--button {
+a .header--button {
   text-align: center;
-  // list-style-type: none;
-  // text-decoration-style: none;
   color: $text-color;
 }
 

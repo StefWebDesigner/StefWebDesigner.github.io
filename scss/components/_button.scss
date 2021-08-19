@@ -1,11 +1,43 @@
 // ============================================= 
 //                  BUTTONS                      
 // =============================================
-  
+ 
+
+//======== GENERAL BUTTON RULES =========
+
+.main--project-button, 
+.button--dropdown {
+  width: 85%;
+}
+
+//========= HEADER ============
+
+// .nav--button {
+.header--button {
+  width: 85%;
+  border-bottom: 4px solid $text-color;
+
+}
+
+
+a .header--button {
+// a .nav--button {
+  // border-bottom: 4px solid $text-color;
+@include main-border-style; 
+cursor: pointer;
+
+}
+
+// a .nav--button:hover {
+a .header--button:hover {
+  border-color: $chrome-grey;
+}
+
+
+//========= MAIN ============
 
 .main--project-button {
   margin: auto;
-  width: 85%;
   padding: 10px;
   @include button-background;
   @include main-border-style;
@@ -23,16 +55,6 @@ a .main--project-button {
   text-decoration-style: none;
 }
 
-a .nav--button {
-  border-bottom: 4px solid $text-color;
-@include main-border-style; 
-cursor: pointer;
-
-}
-
-a .nav--button:hover {
-  border-color: $chrome-grey;
-}
 
 //============DROP DOWN SECTION========
 
@@ -47,7 +69,7 @@ a .nav--button:hover {
   /* FONT COLOR */
   color: $text-color;
   /* PADDING FOR THE OVERALL BUTTON */
-  width: 85%;
+  // width: 85%;
   // padding-left: 105px;
   // padding-right: 105px;
   padding-top: 10px;

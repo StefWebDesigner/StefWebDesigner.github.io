@@ -6,10 +6,11 @@
 	<title> WebApp </title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Roboto:ital@1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <!-- Body Sections -->
@@ -18,65 +19,88 @@
 <!-- HEADER-->
 <header>
 	<div class="header--container">
-		<h1 class="header-website-title">
-		Stefan's Treehouse Coding Portfolio
-		</h1>
-		<img src="images/profile-pic-closer.jpeg" alt="" class="header--profile-pic">
-
+		<div class="header--grouping">
+			<h1 class="header-website-title">
+			Stefan's Treehouse Coding Portfolio
+			</h1>
+			<img src="images/profile-pic-closer.jpeg" alt="" class="header--profile-pic">
 		<!-- INCLUDE AN AN ANIMATED BACKGROUND TO BACK THE TITLE -->
+		</div> <!-- HEADER--GROUPING END TAG -->
+
+		<div class="header--navigation">
+			<a href="#">
+				<button class="header--button transition" data-type="square">Bio</button>
+			</a>
+			<a href="#">
+				<button class="header--button transition" data-type="square">My CV</button>
+			</a>
+			<a href="https://www.linkedin.com/in/stefan-riley-83a7b462/" target="_blank">
+				<button class="header--button transition" data-type="square">Linkedin</button>
+			</a>
+			<span class="preloader"></span>
+		</div>			
+
 	</div> <!-- HEADER-CONTAINER END TAG -->
+
 </header>
 
 
-<!-- MAIN NAVIGATION -->
-<nav>
+
+<nav> 
 	<div class="nav--container">
-		<ul class="nav--navigation">
-			<a href="#">
-				<button class="nav--button transition" data-type="square">About Me</button>
-			</a>
-			<a href="#">
-				<button class="nav--button transition" data-type="square">My CV</button>
-			</a>
-			<a href="https://www.linkedin.com/in/stefan-riley-83a7b462/" target="_blank">
-				<button class="nav--button transition" data-type="square">Linkedin</button>
-			</a>
-			<span class="preloader"></span>
+		<!-- <h2 class="nav--title"> All Projects </h2> -->
 
-		</ul>
-		<!-- <ul class="nav--navigation">
-			<a href="#">
-				<li class="nav--button"> About Me</li>
+		<div class="nav--proj-grouping">
+			<a class="nav--proj-links" href="#id--project-1">
+				<button class="nav-proj-button">1</button>
 			</a>
-			<a href="#">
-				<li class="nav--button">My CV</li>
+			<a class="nav--proj-links" href="#id--project-2">
+				<button class="nav-proj-button">2</button>
 			</a>
-			<a href="#">
-				<li class="nav--button">Linkedin</li>
+			<a class="nav--proj-links" href="#id--project-3">
+				<button class="nav-proj-button">3</button>
 			</a>
-		</ul> -->
-
-	</div> <!-- nav-CONTAINER END TAG -->
+			<a class="nav--proj-links" href="#id--project-4">
+				<button class="nav-proj-button">4</button>
+			</a>
+			<a class="nav--proj-links" href="#id--project-5">
+				<button class="nav-proj-button">5</button>
+			</a>
+			<a class="nav--proj-links" href="#id--project-6">
+				<button class="nav-proj-button">6</button>
+			</a>
+			<a class="nav--proj-links" href="#id--project-7">
+				<button class="nav-proj-button">7</button>
+			</a>
+			<a class="nav--proj-links" href="#id--project-8">
+				<button class="nav-proj-button">8</button>
+			</a>
+		</div> <!-- NAV PROJ GROUPING END TAG-->
+	</div> <!-- NAV CONTAINER END TAG-->
 
 </nav>
 
 
-
 <main>
-	<hr>
+
+	<div class="span--divider"> 
+		<span class="span--divider-1"></span>
+		<span class="span--divider-2"></span>
+		<span class="span--divider-3"></span>
+	</div>
 
 
 	<div class="main--content-container">
 		<div class="main--content-header">
 			<h2 class="main--title-container">
-				Projects
+				All Projects
 			</h2>
 			<!-- ADD A DROP DOWN MENU FOR ALL THE PROJECT FOR QUICK NAVIGATION -->
 		</div>
 
 		<div class="main--project-container">
 			<!-- INDIVIDAL PROJECT SECTIONS -->
-			<div class="main--project-idv-group">
+			<div  id="id--project-1" class="main--project-idv-group">
 				<img src="images/project1-thumb.png" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 1</h3>
@@ -87,7 +111,7 @@
 
 			
 
-				<div class="main--project-button-group">
+				<div  class="main--project-button-group">
 					<div class="button--dropdown-container">
 						<button onclick="myFunction()" class="button--dropdown">Details
 						</button>
@@ -105,10 +129,17 @@
 				</div>
 			</div>
 
-			<hr>
+			<div class="span--divider"> 
+				<span class="span--divider-1"></span>
+				<span class="span--divider-2"></span>
+				<span class="span--divider-3"></span>
+			</div>
 
 
-			<div class="main--project-idv-group">
+			<!-- <hr> -->
+
+
+			<div id="id--project-2" class="main--project-idv-group">
 				<img src="images/project2-thumb.png" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 2</h3>
@@ -134,10 +165,14 @@
 				</div>
 			</div>
 
-			<hr>
+			<div class="span--divider"> 
+				<span class="span--divider-1"></span>
+				<span class="span--divider-2"></span>
+				<span class="span--divider-3"></span>
+			</div>
 
 
-			<div class="main--project-idv-group">
+			<div id="id--project-3" class="main--project-idv-group">
 				<img src="images/project3-thum-2.png" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 3</h3>
@@ -160,10 +195,14 @@
 				</div>				
 			</div>
 
-			<hr>
+			<div class="span--divider"> 
+				<span class="span--divider-1"></span>
+				<span class="span--divider-2"></span>
+				<span class="span--divider-3"></span>
+			</div>
 
 
-			<div class="main--project-idv-group">
+			<div id="id--project-4" class="main--project-idv-group">
 				<img src="images/project4-thumb-1.png" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 4</h3>
@@ -186,9 +225,13 @@
 				</div>
 			</div>
 
-			<hr>
+			<div class="span--divider"> 
+				<span class="span--divider-1"></span>
+				<span class="span--divider-2"></span>
+				<span class="span--divider-3"></span>
+			</div>
 
-			<div class="main--project-idv-group">
+			<div id="id--project-5" class="main--project-idv-group">
 				<img src="images/project5-thumb-1.png" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 5</h3>
@@ -211,10 +254,14 @@
 				</div>
 			</div>
 
-			<hr>
+			<div class="span--divider"> 
+				<span class="span--divider-1"></span>
+				<span class="span--divider-2"></span>
+				<span class="span--divider-3"></span>
+			</div>
 
 
-			<div class="main--project-idv-group">
+			<div id="id--project-6" class="main--project-idv-group">
 				<img src="images/project6-thumb.png" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 6</h3>
@@ -237,9 +284,13 @@
 				</div>
 			</div>
 
-			<hr>
+			<div class="span--divider"> 
+				<span class="span--divider-1"></span>
+				<span class="span--divider-2"></span>
+				<span class="span--divider-3"></span>
+			</div>
 
-			<div class="main--project-idv-group">
+			<div id="id--project-7" class="main--project-idv-group">
 				<img src="" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 7</h3>
@@ -263,9 +314,13 @@
 				</div>
 			</div>
 
-			<hr>
+			<div class="span--divider"> 
+				<span class="span--divider-1"></span>
+				<span class="span--divider-2"></span>
+				<span class="span--divider-3"></span>
+			</div>
 
-			<div class="main--project-idv-group">
+			<div id="id--project-8" class="main--project-idv-group">
 				<img src="images/project8-thumb-1.png" alt="" class="main--project-preview">
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 8</h3>
@@ -294,7 +349,12 @@
 		
 	</div><!-- MAIN CONTENT CONTAINER END TAG-->
 
-	<hr>
+	<div class="span--divider"> 
+		<span class="span--divider-1"></span>
+		<span class="span--divider-2"></span>
+		<span class="span--divider-3"></span>
+	</div>
+
 	<div class="form-socialmedia-flex-container">
 		<div class="form--container">
 			<h2 class="form-title"> Get In Contact With Me</h2>
@@ -333,11 +393,10 @@
 					<path d="m51.359375 366.523438c19.21875-10.410157 39.597656-18.519532 60.710937-24.160157-10.351562-35.996093-15.785156-73.226562-16.148437-110.679687h-95.921875c1.746094 49.386718 19.804688 96.804687 51.359375 134.839844zm0 0"/>
 				</svg>
 			</a>
-			
-		</a>
-			<a href=" https://www.linkedin.com/in/stefan-riley-83a7b462/" target="_blank"><svg class="sm--smaller-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-				<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-				</svg>
+			</a>
+				<a href=" https://www.linkedin.com/in/stefan-riley-83a7b462/" target="_blank"><svg class="sm--smaller-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+					</svg>
 			</a>
 		</div> <!--SOCIAL MEDIA CONTAINER END TAGS-->
 

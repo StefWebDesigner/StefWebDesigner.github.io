@@ -23,21 +23,46 @@ header, nav, main, footer {
 
 //======== HEADER =============
 
+.header--button
+// .nav--button
+.header--navigation {
 
-//======== NAVIGATION =============
-
-.nav--container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // align-items: stretch;
-    margin: auto;
 }
 
-.nav--navigation {
+
+header {
+    flex-direction: column;
+}
+
+.header--navigation {
     display: flex;
     flex-direction: column;
 }
+
+
+
+//======== DIVIDER =============
+
+.span--divider,
+.span--divider-1, 
+.span--divider-2, 
+.span--divider-3 {
+    display: flex;
+    // flex-basis: 100%;
+}
+
+.span--divider {
+    flex-direction: column;
+    justify-content: space-between;
+        flex-basis: 100%;
+
+
+}
+
+
+
+
 
 //======== MAIN =============
 

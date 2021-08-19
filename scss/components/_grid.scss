@@ -5,10 +5,11 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 230px 215px 1fr 40px;
+    grid-template-rows: 490px 1fr 40px;
+    // grid-template-rows: 500px 215px 1fr 40px;
     grid-template-areas:  
     "header"
-    "nav"
+    // "nav"
     "main"
     "footer";
     @include background;
@@ -19,10 +20,10 @@ header {
     grid-area: header;
 }
 
-nav {
-    // background-color: red;
-    grid-area: nav;
-}
+// nav {
+//     // background-color: red;
+//     grid-area: nav;
+// }
 
 main {
     // background-color: pink;

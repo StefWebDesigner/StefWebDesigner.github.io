@@ -18,9 +18,35 @@ body {
         text-align: center;
 }
 
-hr {
-        background-color: $text-color;
+.span--divider {
         margin-top: 10px;
         margin-bottom: 10px;
 
+}
+
+
+.span--divider-1, .span--divider-2, .span--divider-3 {
+        background-color: $text-color;
+        @include main-border-style;
+        margin: auto;
+        margin-bottom: 3px;
+        box-shadow: 10px 5px 5px blue;
+        padding: 5px;
+        transition: transform .3s ease-in;
+}
+
+.span--divider-1 {
+        width: 75%;
+}
+
+.span--divider-1:hover, .span--divider-2:hover, .span--divider-3:hover  {
+        transform: scaleY(1.3) translateX(10px);
+}   
+
+.span--divider-2 {
+        width: 50%;
+}
+
+.span--divider-3 {
+        width: 25%;
 }

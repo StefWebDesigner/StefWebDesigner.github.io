@@ -2,48 +2,210 @@
 // /*              @Media Breakpoints                      */
 // /* ============================================= */
 
-// // General Font Styles
+
+@media only screen and (min-width: 768px) {
+
+//========== GRID ================
+.grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 420px 1fr 40px;
+    // grid-template-rows: 500px 215px 1fr 40px;
+    grid-template-areas:  
+    "header header"
+    "nav main"
+    "footer footer";
+    @include background;
+}
+
+header {
+    // background-color: blue;
+    grid-area: header;
+}
+
+nav {
+    // background-color: red;
+    grid-area: nav;
+    margin: 0;
+}
+
+main {
+    // background-color: pink;
+    grid-area: main;
+}
+
+footer {
+    // background-color: purple;
+    grid-area: footer;
+}
+
+//========== GENERAL RULES ================
+
+.header-website-title, 
+.main--title-container, 
+.main--project-title, 
+.form-title, 
+.main--project-button,
+.nav-proj-button,
+a .header--button  {
+text-shadow: -2px 2px 0 , 
+  2px 2px 0  black, 
+  2px -2px 0 blue, 
+  -2px -2px 0  white ; 
+}
+
+.span--divider-1, .span--divider-2, .span--divider-3 {
+    padding: 10px;
+
+}
+
+//========== HEADER =====================
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; 
+
+}
+
+.header--navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; 
+    flex-basis: 25%;
+
+    // gap: 5px;
+}
+
+.header--button {
+    font-size: 30px;
+    display: flex;
+    width: 100%; 
+    padding: 10px 30px; 
+    flex-basis: 100%;
+}
+
+a .header--button {
+    font-size: 30px;
+}
+
+.header--profile-pic {
+    width: 150px;
+    height: 170px;
+    // border-radius: 50%;
+}
+
+//------------ HEADER SECTION FONTS ------------
 
 
+.header-website-title {
+    font-size: 50px;
+}
 
+//========== NAVIGATION  ================
 
+nav,
+.nav--container,
+.nav--title,
+.nav-proj-button,
+.nav--proj-grouping,
+.nav--proj-links {
+    display: flex;
+}
 
-// // ============================
-
-// @media only screen and (min-width: 768px) {
-
-// // // General Font Styles
-//     .traffic-label, .headline, .sm-user-label, .daily-label, .member-label, .message-label, .recent-label, .settings-label {
-//         font-size: 22px;
-//         margin-left: 10px;
-//     }
+nav {
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
     
-// // GENERAL STUFF
+    // justify-content: stretch;
 
-//     .column-divider-chart-2 {
-//         border-right: #b3b3b3 solid 1px;
-//         width: 768px;
-//     }
+}
 
-// .grid {
-//     grid-template-rows: 50px 1fr;
-//     grid-template-columns: 50px 1fr;
-//     grid-template-areas:
-//         "header header"
-//          "nav main";
+.nav--container {
+    flex-direction: column;
+    // flex-basis: 100%;
+    // justify-content: start;
+    // justify-content: stretch;
+
+
+}
+
+.nav--proj-grouping {
+    flex-direction: column;
+    // justify-content: center;
+}
+
+
+.nav-proj-button {
+    font-size: 45px;
+    color: $text-color;
+    border-radius: 50%;
+    border: solid 1px $chrome-grey;
+    width: 80px;
+    height: 75px;
+    justify-content: center;
+    // margin: auto;
+}
+
+.nav--proj-links {
+    margin: auto;
+
+}
+
+//TRIED MAKING A BORDER AROUND THE PROJECT NAVIGATION
+// a .nav--proj-links {
+// border: solid $text-color 10px;
+    
 // }
 
-// header {
-//     background-color: $main-purple;
-//     grid-area: header;
-// }
 
-// nav {
-//     background-color: $secondary-purple;
-//     grid-area: nav;
-// }
+// ============ MAIN ============
 
-// main {
-//     background-color: $defult-white;
-//     grid-area: main;
-// }
+//------------- PROJECT SECTIONS ---------------
+
+
+//------------ PROJECT SECTION FONTS ------------
+
+.main--title-container {
+    font-size: 45px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+.main--project-title {
+    font-size: 37px;
+}
+
+.main--project-button{
+    font-size: 30px;
+}
+
+//------------- PROJECT SECTIONS GENERAL ---------------
+
+.main--project-preview {
+    width: 120px;
+    // margin: auto;
+}
+
+// ============ FORM =====================
+
+.form-title {
+    font-size: 45px;
+
+}
+
+label {
+    font-size: 30px;
+}
+
+input {
+    font-size: 25px;   
+
+}
+
+}

@@ -2,31 +2,22 @@
 //                  IMAGES                      
 // =============================================
 
+//======== HEADER =========
 
 
 .header--profile-pic {
+    display: flex;
     width: 110px;
     height: 130px;
     border-radius: 50%;
     margin-bottom: 10px;
-
+    // align-items: center;
+    // justify-content: center ;
+    margin: auto;
+    border: 1px solid $text-color;
 }
 
-
-//======== SOCIAL MEDIA =========
-
-.sm--bigger-svg {
-    width: 50px;
-}
-
-.sm--smaller-svg {
-    width: 50px;
-    height: 50px;
-}
-
-path {
-    fill: white;
-}
+//======== MAIN =========
 
 
 .main--project-preview {
@@ -38,3 +29,84 @@ path {
     border: $text-color solid 2px;
 
 }
+
+
+//======== SOCIAL MEDIA =========
+
+.sm--bigger-svg, .sm--smaller-svg {
+    transition: transform .5s ease-in-out ;
+    // transform-origin: 180px 180px;
+    // transform-box: fill-box;
+}
+
+.sm--bigger-svg:hover, .sm--smaller-svg:hover {
+    transform: scaleY(1.2) scaleX(1.2);
+//     @keyframes grow {
+//         0% {
+//           transform: scale(0);
+//       }
+//         30% {
+//           transform: scale(1.1);
+      
+//         }
+//         60% { 
+//           transform: scale(0.9);
+//       /*    It makes it have a fluid bouncing effect*/
+      
+//         }
+}
+
+path:hover {
+    transform: fill;
+    fill: blue;
+
+}
+
+
+
+// // }
+// path {
+//     transition: transform .5s ease-in-out ;
+//     transform: grow;
+//     transform-origin: 180px 180px;
+//     transform-box: fill-box;
+// }
+
+// path:hover {
+//     // transform: scaleY(1.2) scaleX(1.2);
+//     @keyframes grow {
+//         0% {
+//           transform: scale(0);
+//       }
+//         30% {
+//           transform: scale(1.1);
+      
+//         }
+//         60% { 
+//           transform: scale(0.9);
+//       /*    It makes it have a fluid bouncing effect*/
+      
+//         }
+//       }
+
+// }
+
+.sm--bigger-svg {
+    width: 50px;
+}
+
+.sm--smaller-svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+path {
+    fill: white;
+    transition: transform 10s ease-in-out ;
+}
+
+
