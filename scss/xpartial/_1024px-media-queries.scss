@@ -1,41 +1,174 @@
-// // /* ============================================= */
-// // /*              @Media Breakpoints               */
-// // /* ============================================= */
-
-// @media only screen and (min-width: 1024px) {
-
-// // //===============================================
-// // //Groups Font's
-
-// //   //===============================================
-
-// .grid {
-//     // min-width: 1024px;    
-//     grid-template-rows: 70px 1fr;
-//     grid-template-columns: 70px 1fr;
-//     grid-template-areas:
-//         "header header"
-//          "nav main";
-// }
-
-// header {
-//     background-color: $main-purple;
-//     grid-area: header;
-// }
-
-// nav {
-//     background-color: $secondary-purple;
-//     grid-area: nav;
-// }
-
-// main {
-//     background-color: $defult-white;
-//     grid-area: main;
-// }
+// /* ============================================= */
+// /*              @Media Breakpoints                      */
+// /* ============================================= */
 
 
-// // //========================//
-// // // HEADER (FLEX) PROPERTIES //
-// // //========================//
-// // //(TITLE/BELL ICON/ BREAKLINE/ME)
-// }
+@media only screen and (min-width: 1024px) {
+
+    //========== GRID ================
+    .grid {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 420px 1fr 40px;
+        // grid-template-rows: 500px 215px 1fr 40px;
+        grid-template-areas:  
+        "header header"
+        "nav main"
+        "footer footer";
+        @include background;
+    }
+    
+    header {
+        // background-color: blue;
+        grid-area: header;
+    }
+    
+    nav {
+        // background-color: red;
+        grid-area: nav;
+        margin: 0;
+    }
+    
+    main {
+        // background-color: pink;
+        grid-area: main;
+    }
+    
+    footer {
+        // background-color: purple;
+        grid-area: footer;
+    }
+
+    //========== GENERAL FONTS
+
+    .main--title-container, 
+    .main--project-title, 
+    .form-title, 
+    .main--project-button,
+    .nav-proj-button,
+    a .header--button  {
+        font-size: 40px;
+    }
+
+    .header-website-title {
+        font-size: 55px;
+    }
+
+    //======== NAVIGATION ========
+
+    // nav {
+    //     height: 100%;
+    //     flex-direction: column;
+    //     justify-content: start;
+    //     flex-basis: 100px;
+
+        
+    //     // justify-content: stretch;
+    
+    // }
+    
+    // .nav--container {
+    //     // flex-direction: column;
+    //     // margin-top: 115px;
+    //     // flex-basis: 100%;
+    //     // justify-content: start;
+    //     // justify-content: stretch;
+    //     // flex-basis: 100px;
+
+    
+    // }
+    
+    .nav--proj-grouping {
+        // flex-direction: column;
+        // justify-content: center;   
+        margin-top: 50px;
+    }
+
+
+
+
+
+
+
+
+
+    //=========== FORM ==========
+
+    .form-socialmedia-flex-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // justify-content: center;
+        // flex-basis: 100%;
+    }
+
+    form {
+        flex-basis: 80%;
+
+    }
+
+    .form-title {
+        margin-left :50%;  
+        margin-top:20px;
+    }
+
+    label {
+        font-size: 35px;
+    }
+    
+    input {
+        font-size: 30px;
+        height: 60px;   
+        width: 100%;
+    
+    }
+
+    textarea {
+        font-size: 30px;
+        height: 160px;   
+        width: 100%;
+    }
+
+    //======== SOCIAL MEDIA =====
+
+    .sm--bigger-svg {
+        width: 100px;
+    }
+    
+    .sm--smaller-svg {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .social-media-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: auto;
+        // justify-content: center;
+        // align-items: center;
+        // margin: auto;
+        flex-basis: 50%;
+        gap: 40px;
+    }
+
+    // .sm--bigger-svg:first-child {
+    //     margin-top: 100px;
+
+    // }
+
+
+
+
+
+
+    //=========== FOOTER ==========
+
+
+
+
+}
+    

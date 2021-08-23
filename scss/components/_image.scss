@@ -56,7 +56,7 @@
 //         }
 }
 
-path:hover {
+.svg--path:hover, .svg--website-group:hover {
     transform: fill;
     fill: blue;
 

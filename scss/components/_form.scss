@@ -3,6 +3,12 @@
 //                  FORM                      
 // =============================================
 
+form {
+    display: flex;
+    width: 100%;
+}
+
+
 label, input, textarea {
     text-align: center;
     margin: auto;
@@ -21,7 +27,17 @@ textarea {
     height: 80px;
 }
 
+textarea::placeholder {
+    margin: auto;
+    font-size: 28px;
+}
 
+label {
+    margin: auto;
+    text-align: center;
+    color: $text-color;
+}
+  
 
 
 

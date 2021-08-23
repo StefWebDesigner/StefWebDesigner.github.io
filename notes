@@ -1,3 +1,65 @@
+https://codemyui.com/pure-css-shining-button-hover-animation/
+
+https://codemyui.com/rounded-corner-social-buttons-in-css/
+
+
+
+.bell-icon,
+nav svg {
+  transition: .3s ease-out;
+  width: 2rem;
+  color: $defult-white;
+  margin: auto;
+
+  &:hover,
+  &:focus {
+    animation: bellshake .5s cubic-bezier(.36, .07, .19, .97) both;
+    backface-visibility: hidden;
+    transform-origin: top right;
+  }
+}
+
+@keyframes bellshake {
+  0% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotate(5deg);
+  }
+
+  30% {
+    transform: rotate(-5deg);
+  }
+
+  45% {
+    transform: rotate(4deg);
+  }
+
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  75% {
+    transform: rotate(2deg);
+  }
+
+  85% {
+    transform: rotate(-2deg);
+  }
+
+  92% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+
+
+
 OBSERVATIONS:
 - If a text is not centering with text-align:center its because 
 it's flex
@@ -9,17 +71,26 @@ TOP PRIORITIES:
 
 ERRORS/PROBLEMS:
 (MOBILE)
+- a .nav--button > this is not being fluidly responsive
 - button--dropdown > js > it only targets the first drop down container
 
-REPO UDPATES NOTES:
-- main--project-title > change the font to be bigger + remove the top hr line
-- some of project pictures > some skewd looking
-- button--dropdown > font not changing/not centering
-- a .main--project-button > can't remove the link underline styling
 
+(768)
+- add the cool matrix button to the project
+
+
+
+
+REPO UDPATES NOTES:
+(768)
+- nav button layout uptop + linked
+- new divider + animation
+- header profile picture is larger for the 768px + border
+- social media animation added
 
 
 THINGS TO ADD:
+add the dashed lined rotation around the SM icons when hovered
 - add an animation behind the title page
 - add my special heading title font
 - https://www.w3schools.com/howto/howto_js_dropdown.asp
@@ -41,3 +112,18 @@ https://codepen.io/robson_muniz/pen/BaygbQY
 
 
 https://omprakash-76044.medium.com/attractive-glowing-neon-css-buttons-34b4c4bbe3a6
+
+
+
+
+
+
+Other cool neon ideas:
+https://codemyui.com/cursive-text-neon-text-effect/
+https://codemyui.com/shimmering-neon-text/
+https://codemyui.com/various-color-neon-glow-for-text-in-css/
+https://codemyui.com/blurry-wavy-text-animation/
+https://codemyui.com/broken-and-out-of-focus-text-effect-using-css/
+https://codemyui.com/pure-css-social-share-icon-hover-animation/
+https://codemyui.com/button-hover-slide-to-reveal-social-icons/
+https://codemyui.com/floating-icons-left-border-pure-css/
