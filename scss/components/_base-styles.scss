@@ -21,9 +21,7 @@ body {
 .span--divider {
         margin-top: 10px;
         margin-bottom: 10px;
-
 }
-
 
 .span--divider-1, .span--divider-2, .span--divider-3 {
         background-color: $text-color;
@@ -32,7 +30,7 @@ body {
         margin-bottom: 3px;
         box-shadow: 10px 5px 5px blue;
         padding: 5px;
-        transition: transform .3s ease-in;
+        transition: transform .3s ease-in-out;
 }
 
 .span--divider-1 {
@@ -50,3 +48,4 @@ body {
 .span--divider-3 {
         width: 25%;
 }
+

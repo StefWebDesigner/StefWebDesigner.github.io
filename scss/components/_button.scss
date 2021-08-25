@@ -33,6 +33,9 @@ a .header--button:hover {
   border-color: $chrome-grey;
 }
 
+//========= NAVIGATION ============
+
+
 
 //========= MAIN ============
 
@@ -85,7 +88,6 @@ a .main--project-button {
 
 // }
 
-
 /* DROP DOWN HOVER EFFECT */
 // .button--dropdown:hover, .button--dropdown:focus {
 //   // background-color: $text-color;
@@ -108,7 +110,15 @@ a .main--project-button {
      position: relative;
      /* <><><><><><><>><><><><>>< */
   /*CHANGES COLOR OF THE DROP DOWN MENU */
-  background-color: $chrome-grey;
+  // background-color: $chrome-grey;
+  background-color: blue;
+  @include main-border-style;
+  border: 1px solid #0780fa;
+  //TRYING TO ADD A HOVER BOX
+  box-shadow: 50px 50px 50px  white;
+  width: 87%;
+  margin: auto;
+  
   /* CONTROLS THE WIDTH OF THE DROP MENU */
   min-width: 160px;
   /* ******************************************* */

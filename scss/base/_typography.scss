@@ -23,13 +23,14 @@ a {
 .form-title, 
 .main--project-button,
 .nav-proj-button,
-a .header--button  {
-
+a .header--button,
+.button--dropdown  {
 text-shadow: -1px 1px 0 , 
   1px 1px 0  black, 
   1px -1px 0 blue, 
   -1px -1px 0  white ; 
 }
+
 
 // ===== HEADER ======
 
@@ -37,9 +38,7 @@ text-shadow: -1px 1px 0 ,
   font-size: 30px;
   text-align: center;
   color: $text-color;
-
 }
-
 
 //======  BUTTON IN GENERAL ====
 
@@ -47,7 +46,6 @@ text-shadow: -1px 1px 0 ,
   font-size: 25px;
   text-align: center;
 }
-
 
 // ===== NAVIGATION ======
 
@@ -64,13 +62,12 @@ a .header--button {
 .main--title-container {
   margin-top: 5px;
   margin-left: 10px;
+margin:auto;
 
 }
 
 .main--title-container {
   font-size: 32px;
-
-
 }
 
 .main--project-title {
@@ -88,7 +85,13 @@ a .main--project-button {
   text-align: center;
 }
 
+.button--dropdown-content p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 
+}
 
 //-------- FORM SECTION-----------
 

@@ -48,12 +48,14 @@ footer {
 .form-title, 
 .main--project-button,
 .nav-proj-button,
-a .header--button  {
+a .header--button,
+.button--dropdown  {
 text-shadow: -2px 2px 0 , 
   2px 2px 0  black, 
   2px -2px 0 blue, 
   -2px -2px 0  white ; 
 }
+
 
 .span--divider-1, .span--divider-2, .span--divider-3 {
     padding: 10px;
@@ -153,8 +155,30 @@ nav {
 
 .nav--proj-links {
     margin: auto;
+    //     box-shadow: 10px 5px 5px blue;
+    // padding: 5px;
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
 
 }
+
+
+
+.nav--proj-links:hover {
+    transform: scaleY(1.3) translateX(10px);
+}
+
+
+// a .nav--proj-links, .nav-proj-button {
+//     box-shadow: 10px 5px 5px blue;
+//     padding: 5px;
+//     transition: transform .3s ease-in;
+// }
+
+// a .nav--proj-links:hover, .nav-proj-button:hover {
+//     transform: scaleY(1.3) translateX(10px);
+// }
+
 
 //TRIED MAKING A BORDER AROUND THE PROJECT NAVIGATION
 // a .nav--proj-links {
@@ -181,9 +205,14 @@ nav {
     font-size: 37px;
 }
 
-.main--project-button{
+.main--project-button, .form--project-button {
     font-size: 30px;
 }
+
+// .button--dropdown {
+//     font-size: 156px;
+// }
+
 
 //------------- PROJECT SECTIONS GENERAL ---------------
 

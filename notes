@@ -1,9 +1,46 @@
-https://codemyui.com/pure-css-shining-button-hover-animation/
 
-https://codemyui.com/rounded-corner-social-buttons-in-css/
+-------------------------------
+
+OBSERVATIONS:
+- If a text is not centering with text-align:center its because 
+it's flex
+-------------------------------
+
+TOP PRIORITIES:
+- (DEMO) - learn how to make demo/make them
+
+-------------------------------
+ERRORS/PROBLEMS:
+(MOBILE)
+- css animated background
+- main--title-container > center it
+- messageInput > match the other placeholder text
+
+(TABLET)
+- .button--dropdown > font not matching with main--project-button
+- messageInput > match the other placeholder text & needs centering
+
+(DESKTOP)
+- messageInput > needs centering
+- .button--dropdown > font not matching with main--project-button
+
+(JS)
+- button class="form--project-button" id="send"> send message to email automatically
+https://mailtrap.io/blog/javascript-send-email/
+- add the anisition plug in
+-------------------------------
+REPO UDPATES NOTES:
+(js)
+- contact information form information is set up
+- button--dropdown > js > it only targets the first drop down container
+- nav-proj-button > they have animation
+(HTML)
+- Add repo to links
+-------------------------------
 
 
 
+EXAMPLE OF USING ANIMATIONS:
 .bell-icon,
 nav svg {
   transition: .3s ease-out;
@@ -60,34 +97,6 @@ nav svg {
 
 
 
-OBSERVATIONS:
-- If a text is not centering with text-align:center its because 
-it's flex
-
-TOP PRIORITIES:
-- Complete mobile view in a reasonably decent state by Thursday
-- Add repo to links
-
-
-ERRORS/PROBLEMS:
-(MOBILE)
-- a .nav--button > this is not being fluidly responsive
-- button--dropdown > js > it only targets the first drop down container
-
-
-(768)
-- add the cool matrix button to the project
-
-
-
-
-REPO UDPATES NOTES:
-(768)
-- nav button layout uptop + linked
-- new divider + animation
-- header profile picture is larger for the 768px + border
-- social media animation added
-
 
 THINGS TO ADD:
 add the dashed lined rotation around the SM icons when hovered
@@ -127,3 +136,6 @@ https://codemyui.com/broken-and-out-of-focus-text-effect-using-css/
 https://codemyui.com/pure-css-social-share-icon-hover-animation/
 https://codemyui.com/button-hover-slide-to-reveal-social-icons/
 https://codemyui.com/floating-icons-left-border-pure-css/
+https://codemyui.com/pure-css-shining-button-hover-animation/
+
+https://codemyui.com/rounded-corner-social-buttons-in-css/

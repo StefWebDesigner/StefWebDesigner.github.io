@@ -37,6 +37,21 @@ label {
     text-align: center;
     color: $text-color;
 }
+
+.form--project-button {
+    margin: auto;
+    padding: 10px;
+    @include button-background;
+    @include main-border-style;
+    border-bottom: 4px solid $text-color;
+    cursor: pointer;
+    width: 85%;
+    margin-bottom: 25px;
+  }
+  
+  .form--project-button:hover {
+    border-color: $chrome-grey;
+  }
   
 
 

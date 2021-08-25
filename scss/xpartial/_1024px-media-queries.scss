@@ -46,9 +46,14 @@
     .main--project-title, 
     .form-title, 
     .main--project-button,
+    .form--project-button,
     .nav-proj-button,
     a .header--button  {
         font-size: 40px;
+        text-shadow: -3px 2px 0 , 
+            3px 2px 0  black, 
+            3px -2px 0 blue, 
+            -3px -2px 0  white ; 
     }
 
     .header-website-title {
@@ -84,14 +89,6 @@
         // justify-content: center;   
         margin-top: 50px;
     }
-
-
-
-
-
-
-
-
 
     //=========== FORM ==========
 
@@ -131,6 +128,11 @@
         height: 160px;   
         width: 100%;
     }
+
+    .form--project-button {
+        width: 100%;
+      }
+      
 
     //======== SOCIAL MEDIA =====
 
