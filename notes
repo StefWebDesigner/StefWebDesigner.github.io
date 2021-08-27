@@ -7,22 +7,26 @@ it's flex
 -------------------------------
 
 TOP PRIORITIES:
-- (DEMO) - learn how to make demo/make them
+- add a animated css background
+ https://www.sliderrevolution.com/resources/css-animated-background/
+ - Pure CSS Gradient Background Animation
+ CSS only animated background
+- make it aris approved
 
 -------------------------------
 ERRORS/PROBLEMS:
-(MOBILE)
-- css animated background
-- main--title-container > center it
-- messageInput > match the other placeholder text
+(HTML)
+
+(MOBILE : HOME)
+- hover effect on detailed button
+- update project description 
+
+(MOBILE : CV)
+- rough draft cv html
 
 (TABLET)
-- .button--dropdown > font not matching with main--project-button
-- messageInput > match the other placeholder text & needs centering
 
 (DESKTOP)
-- messageInput > needs centering
-- .button--dropdown > font not matching with main--project-button
 
 (JS)
 - button class="form--project-button" id="send"> send message to email automatically
@@ -30,14 +34,26 @@ https://mailtrap.io/blog/javascript-send-email/
 - add the anisition plug in
 -------------------------------
 REPO UDPATES NOTES:
+(CSS)
+- numbers on project nav better aligned
+- main--title-container > center it
+- .button--dropdown > font not matching with main--project-button
 (js)
-- contact information form information is set up
-- button--dropdown > js > it only targets the first drop down container
-- nav-proj-button > they have animation
 (HTML)
-- Add repo to links
+- created the cv page
+- added content to Cv page
+- make span dividers slimer
+
 -------------------------------
 
+THINGS TO ADD:
+add the dashed lined rotation around the SM icons when hovered
+- add an animation behind the title page
+- add my special heading title font
+- https://www.w3schools.com/howto/howto_js_dropdown.asp
+    > a search drop down menu to quick select the project desired to see
+- (DEMO) - learn how to make demo/make them
+- add scrollspy
 
 
 EXAMPLE OF USING ANIMATIONS:
@@ -95,15 +111,6 @@ nav svg {
 }
 
 
-
-
-
-THINGS TO ADD:
-add the dashed lined rotation around the SM icons when hovered
-- add an animation behind the title page
-- add my special heading title font
-- https://www.w3schools.com/howto/howto_js_dropdown.asp
-    > a search drop down menu to quick select the project desired to see
 
 
 https://codemyui.com/square-emoji-shadow-and-line-particles-popper-effect-on-button-click/

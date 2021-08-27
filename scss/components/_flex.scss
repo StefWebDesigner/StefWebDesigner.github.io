@@ -49,7 +49,7 @@ header {
 
 
 
-//======== DIVIDER =============
+//======== MAIN DIVIDER =============
 
 .span--divider,
 .span--divider-1, 
@@ -66,6 +66,26 @@ header {
 
 
 }
+
+//======== CV DIVIDER =============
+
+
+.span--cv-divider,
+.span--cv-divider-1, 
+.span--cv-divider-2, 
+.span--cv-divider-3 {
+    display: flex;
+    // flex-basis: 100%;
+}
+
+.span--cv-divider {
+    flex-direction: column;
+    justify-content: space-between;
+        flex-basis: 100%;
+
+
+}
+
 
 //======== MAIN =============
 
@@ -123,9 +143,12 @@ main {
 
 //-------- FORM SECTIONS -----------
 
+input, textarea {
+    display: flex;
+}
+
 // .form-socialmedia-flex-container,
 .form--container,
-// .form-title,
 form {
     display: flex;
     flex-direction: column;

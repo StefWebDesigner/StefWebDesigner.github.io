@@ -29,7 +29,7 @@ cursor: pointer;
 }
 
 // a .nav--button:hover {
-a .header--button:hover {
+a .header--button:hover, .button--dropdown:hover {
   border-color: $chrome-grey;
 }
 
@@ -111,11 +111,11 @@ a .main--project-button {
      /* <><><><><><><>><><><><>>< */
   /*CHANGES COLOR OF THE DROP DOWN MENU */
   // background-color: $chrome-grey;
-  background-color: blue;
-  @include main-border-style;
-  border: 1px solid #0780fa;
+  // background-color: blue;
+  // @include main-border-style;
+  // border: 1px solid #0780fa;
   //TRYING TO ADD A HOVER BOX
-  box-shadow: 50px 50px 50px  white;
+  // box-shadow: 50px 50px 50px  white;
   width: 87%;
   margin: auto;
   
@@ -129,7 +129,7 @@ a .main--project-button {
   // padding-left: 20px;
   // padding-right: 20px;
     /**********************************************/
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 

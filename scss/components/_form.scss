@@ -10,6 +10,7 @@ form {
 
 
 label, input, textarea {
+    display: flex;
     text-align: center;
     margin: auto;
 }
@@ -17,6 +18,7 @@ label, input, textarea {
 input, textarea {
     width: 85%;
     @include main-border-style;
+    font-size: 17px;
 }
 
 input {
@@ -25,12 +27,19 @@ input {
 
 textarea {
     height: 80px;
+padding-top: 30px;
+
 }
 
-textarea::placeholder {
-    margin: auto;
-    font-size: 28px;
-}
+
+
+
+
+// textarea::placeholder, input::placeholder {
+//     display: flex;
+//     margin: auto;
+//     font-size: 17px;
+// }
 
 label {
     margin: auto;

@@ -87,6 +87,120 @@ body {
   text-align: center;
 }
 
+.background {
+  background-size: 400% 400%;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0px;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+          transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in forwards infinite;
+          animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+  border-color: #17f4a8;
+}
+
+.cube:nth-child(2) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  left: 25vw;
+  top: 40vh;
+}
+
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes cube {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+            transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+            transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
 .span--divider {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -123,6 +237,42 @@ body {
   width: 25%;
 }
 
+.span--cv-divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.span--cv-divider-1, .span--cv-divider-2, .span--cv-divider-3 {
+  background-color: #17f4a8;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 3px;
+  -webkit-box-shadow: 10px 5px 5px blue;
+          box-shadow: 10px 5px 5px blue;
+  padding: 5px;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.span--cv-divider-1 {
+  width: 75%;
+}
+
+.span--cv-divider-1:hover, .span--cv-divider-2:hover, .span--cv-divider-3:hover {
+  -webkit-transform: scaleY(1.3) translateX(10px);
+          transform: scaleY(1.3) translateX(10px);
+}
+
+.span--cv-divider-2 {
+  width: 50%;
+}
+
+.span--cv-divider-3 {
+  width: 25%;
+}
+
 .main--project-button,
 .button--dropdown {
   width: 85%;
@@ -138,7 +288,7 @@ a .header--button {
   cursor: pointer;
 }
 
-a .header--button:hover {
+a .header--button:hover, .button--dropdown:hover {
   border-color: #94989c;
 }
 
@@ -201,11 +351,6 @@ a .main--project-button {
   position: relative;
   /* <><><><><><><>><><><><>>< */
   /*CHANGES COLOR OF THE DROP DOWN MENU */
-  background-color: blue;
-  border-radius: 10px;
-  border: 1px solid #0780fa;
-  -webkit-box-shadow: 50px 50px 50px  white;
-          box-shadow: 50px 50px 50px  white;
   width: 87%;
   margin: auto;
   /* CONTROLS THE WIDTH OF THE DROP MENU */
@@ -214,8 +359,6 @@ a .main--project-button {
   /* ******DELETE THIS CODE IF USING LINKS****** /
   /* ******************************************* */
   /**********************************************/
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -267,8 +410,8 @@ particle {
       grid-template-rows: 490px 1fr 40px;
       grid-template-areas: "header" "main" "footer";
   background: #128082;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #128082), color-stop(37%, #042b4d));
-  background: linear-gradient(0deg, #128082 1%, #042b4d 37%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #128082), color-stop(37%, #042b4d));
+  background: linear-gradient(0deg, #128082 10%, #042b4d 37%);
 }
 
 header {
@@ -354,6 +497,9 @@ form {
 }
 
 label, input, textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   margin: auto;
 }
@@ -361,6 +507,7 @@ label, input, textarea {
 input, textarea {
   width: 85%;
   border-radius: 10px;
+  font-size: 17px;
 }
 
 input {
@@ -369,26 +516,7 @@ input {
 
 textarea {
   height: 80px;
-}
-
-textarea::-webkit-input-placeholder {
-  margin: auto;
-  font-size: 28px;
-}
-
-textarea:-ms-input-placeholder {
-  margin: auto;
-  font-size: 28px;
-}
-
-textarea::-ms-input-placeholder {
-  margin: auto;
-  font-size: 28px;
-}
-
-textarea::placeholder {
-  margin: auto;
-  font-size: 28px;
+  padding-top: 30px;
 }
 
 label {
@@ -461,6 +589,27 @@ header {
 }
 
 .span--divider {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.span--cv-divider,
+.span--cv-divider-1,
+.span--cv-divider-2,
+.span--cv-divider-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.span--cv-divider {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -546,6 +695,12 @@ main {
           justify-content: center;
 }
 
+input, textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .form--container,
 form {
   display: -webkit-box;
@@ -611,8 +766,8 @@ footer {
         grid-template-rows: 420px 1fr 40px;
         grid-template-areas: "header header" "nav main" "footer footer";
     background: #128082;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #128082), color-stop(37%, #042b4d));
-    background: linear-gradient(0deg, #128082 1%, #042b4d 37%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #128082), color-stop(37%, #042b4d));
+    background: linear-gradient(0deg, #128082 10%, #042b4d 37%);
   }
   header {
     -ms-grid-row: 1;
@@ -645,7 +800,7 @@ footer {
   .nav-proj-button,
   a .header--button,
   .button--dropdown {
-    text-shadow: -2px 2px 0 ,  2px 2px 0  black,  2px -2px 0 blue,  -2px -2px 0  white;
+    text-shadow: -1px 1px 0 ,  2px 2px 0  black,  2px -2px 0 blue,  -2px -2px 0  white;
   }
   .span--divider-1, .span--divider-2, .span--divider-3 {
     padding: 10px;
@@ -737,6 +892,7 @@ footer {
     border: solid 1px #94989c;
     width: 80px;
     height: 75px;
+    padding-top: 10px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -761,7 +917,7 @@ footer {
   .main--project-title {
     font-size: 37px;
   }
-  .main--project-button, .form--project-button {
+  .main--project-button, .form--project-button, button.button--dropdown {
     font-size: 30px;
   }
   .main--project-preview {
@@ -773,8 +929,12 @@ footer {
   label {
     font-size: 30px;
   }
-  input {
+  input, textarea {
     font-size: 25px;
+  }
+  textarea {
+    height: 100px;
+    padding-top: 30px;
   }
 }
 
@@ -789,8 +949,8 @@ footer {
         grid-template-rows: 420px 1fr 40px;
         grid-template-areas: "header header" "nav main" "footer footer";
     background: #128082;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #128082), color-stop(37%, #042b4d));
-    background: linear-gradient(0deg, #128082 1%, #042b4d 37%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #128082), color-stop(37%, #042b4d));
+    background: linear-gradient(0deg, #128082 10%, #042b4d 37%);
   }
   header {
     -ms-grid-row: 1;
@@ -823,10 +983,13 @@ footer {
   .nav-proj-button,
   a .header--button {
     font-size: 40px;
-    text-shadow: -3px 2px 0 ,  3px 2px 0  black,  3px -2px 0 blue,  -3px -2px 0  white;
+    text-shadow: -1px 1px 0 ,  3px 2px 0  black,  3px -2px 0 blue,  -3px -2px 0  white;
   }
   .header-website-title {
     font-size: 55px;
+  }
+  button.button--dropdown {
+    font-size: 40px;
   }
   .nav--proj-grouping {
     margin-top: 50px;
@@ -856,14 +1019,17 @@ footer {
   label {
     font-size: 35px;
   }
-  input {
+  input, textarea {
     font-size: 30px;
+  }
+  input {
     height: 60px;
     width: 100%;
   }
   textarea {
     font-size: 30px;
     height: 160px;
+    padding-top: 60px;
     width: 100%;
   }
   .form--project-button {

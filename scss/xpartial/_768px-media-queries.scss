@@ -50,7 +50,7 @@ footer {
 .nav-proj-button,
 a .header--button,
 .button--dropdown  {
-text-shadow: -2px 2px 0 , 
+text-shadow: -1px 1px 0 , 
   2px 2px 0  black, 
   2px -2px 0 blue, 
   -2px -2px 0  white ; 
@@ -149,6 +149,7 @@ nav {
     border: solid 1px $chrome-grey;
     width: 80px;
     height: 75px;
+    padding-top: 10px;
     justify-content: center;
     // margin: auto;
 }
@@ -205,13 +206,10 @@ nav {
     font-size: 37px;
 }
 
-.main--project-button, .form--project-button {
+.main--project-button, .form--project-button, button.button--dropdown  {
     font-size: 30px;
 }
 
-// .button--dropdown {
-//     font-size: 156px;
-// }
 
 
 //------------- PROJECT SECTIONS GENERAL ---------------
@@ -232,9 +230,16 @@ label {
     font-size: 30px;
 }
 
-input {
+input, textarea {
     font-size: 25px;   
 
 }
+
+textarea {
+    height: 100px;
+padding-top: 30px;
+
+}
+
 
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Treehouse Project 7">
+	<meta name="description" content="Final Treehouse Front End Developer Portfolio">
 	<title> WebApp </title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -17,8 +17,13 @@
 <body class="grid">
 
 <!-- HEADER-->
-<header>
+<header class="background">
 	<div class="header--container">
+		<div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
 		<div class="header--grouping">
 			<h1 class="header-website-title">
 			Stefan's Treehouse Coding Portfolio
@@ -28,10 +33,10 @@
 		</div> <!-- HEADER--GROUPING END TAG -->
 
 		<div class="header--navigation">
-			<a href="#">
-				<button class="header--button transition" data-type="square">Bio</button>
+			<a href="index.html">
+				<button class="header--button transition" data-type="square">Home</button>
 			</a>
-			<a href="#">
+			<a href="html/cv.html" target="_blank">
 				<button class="header--button transition" data-type="square">My CV</button>
 			</a>
 			<a href="https://www.linkedin.com/in/stefan-riley-83a7b462/" target="_blank">
@@ -360,7 +365,7 @@
 				<input id="emailInput"type="text" name="email" placeholder="Johnny.Appleseed@email.com"><br>
 				
 				<label for="message"> Write a message</label><br>
-				<textarea id="messageInput"type="text" name="message" placeholder="Enter your message"></textarea><br>
+				<textarea id="messageInput" type="text" name="message" placeholder="Enter your message"></textarea><br>
 			
 				<button class="form--project-button" id="send" type="submit" name="submit" value="Submit"> Send </button>
 

@@ -50,7 +50,7 @@
     .nav-proj-button,
     a .header--button  {
         font-size: 40px;
-        text-shadow: -3px 2px 0 , 
+        text-shadow: -1px 1px 0 , 
             3px 2px 0  black, 
             3px -2px 0 blue, 
             -3px -2px 0  white ; 
@@ -83,6 +83,12 @@
 
     
     // }
+
+    button.button--dropdown {
+        font-size: 40px;
+
+    }
+
     
     .nav--proj-grouping {
         // flex-direction: column;
@@ -115,9 +121,14 @@
     label {
         font-size: 35px;
     }
+
+    input, textarea {
+        font-size: 30px;
+
+
+    }
     
     input {
-        font-size: 30px;
         height: 60px;   
         width: 100%;
     
@@ -125,7 +136,8 @@
 
     textarea {
         font-size: 30px;
-        height: 160px;   
+        height: 160px;  
+        padding-top: 60px;
         width: 100%;
     }
 
