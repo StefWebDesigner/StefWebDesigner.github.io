@@ -1,0 +1,14 @@
+// ============================================= 
+//                  IMAGES                      
+// =============================================
+
+//======== Education =========
+
+.myDropdown--cv-edu-img, .myDropdown--cv-work-img, .myDropdown--cv-cert-img {
+    display: flex;
+    width: 100px;
+    // margin: auto;
+    border-radius: 360%;
+    margin: auto;
+    border: $text-color solid 2px;
+}

@@ -67,6 +67,41 @@ a .main--project-button {
   margin-right: 5px;
 }
 
+.myDropdown--cv-work-duties-list {
+  list-style-type: none;
+  border: solid 1px #0780fa;
+  background-color: #0780fa;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+.myDropdown--cv-work-duties-items {
+  margin-top: 5px;
+}
+
+.myDropdown--cv-edu-uni-title, .myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-company, .myDropdown--cv-work-title,
+.myDropdown--cv-cert-company, .myDropdown--cv-cert-title {
+  text-shadow: -1px 1px 0 ,  1px 1px 0  black,  1px -1px 0 blue,  -1px -1px 0  white;
+}
+
+.myDropdown--cv-edu-uni-title, .myDropdown--cv-work-company, .myDropdown--cv-cert-company {
+  font-size: 30px;
+}
+
+.myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-title, .myDropdown--cv-cert-title {
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.myDropdown--cv-date, .myDropdown--cv-cert-date {
+  color: #0780fa;
+  font-size: 20px;
+  text-shadow: 1px 1px 0 #17f4a8;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -487,6 +522,16 @@ path {
   transition: -webkit-transform 10s ease-in-out;
   transition: transform 10s ease-in-out;
   transition: transform 10s ease-in-out, -webkit-transform 10s ease-in-out;
+}
+
+.myDropdown--cv-edu-img, .myDropdown--cv-work-img, .myDropdown--cv-cert-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  border-radius: 360%;
+  margin: auto;
+  border: #17f4a8 solid 2px;
 }
 
 form {

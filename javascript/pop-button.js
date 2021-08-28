@@ -34,7 +34,7 @@ function pop (e) {
     
     switch (type) {
       case 'square':
-        particle.style.background = 'aqua';
+        particle.style.background = '#17f4a8';
         particle.style.border = '1px solid white';
 
 
