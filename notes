@@ -7,10 +7,6 @@ it's flex
 -------------------------------
 
 TOP PRIORITIES:
-- add a animated css background
- https://www.sliderrevolution.com/resources/css-animated-background/
- - Pure CSS Gradient Background Animation
- CSS only animated background
 - make it aris approved
 
 -------------------------------
@@ -19,12 +15,9 @@ ERRORS/PROBLEMS:
 - fix project 2 floating picture
 
 (MOBILE : HOME)
-- update project description 
-- hover effect on detailed button
-- add the demo links
+- footer > html content is not updating after saving the file
 
 (MOBILE : CV)
-- add cv social media links
 
 (TABLET)
 
@@ -33,26 +26,25 @@ ERRORS/PROBLEMS:
 (JS)
 - button class="form--project-button" id="send"> send message to email automatically
 https://mailtrap.io/blog/javascript-send-email/
-- add the anisition plug in
+- anismition plug in > its not working despite set up as my past website
 -------------------------------
 REPO UDPATES NOTES:
-(CSS)
-- numbers on project nav better aligned
-- main--title-container > center it
-- .button--dropdown > font not matching with main--project-button
+(CSS : HOME)
+(CSS : CV)
+- added hover effect to search links
 (js)
 (HTML : HOME)
-- update project description 
 (HTML : CV)
-- created the cv page
-- added content to Cv page
-- make span dividers slimer
-- content updated & refined
-- styling applied
+-- add cv social media links
+
 
 -------------------------------
 
 THINGS TO ADD:
+- add scrollspy
+- add the demo links
+
+JUST EXTRA:
 add the dashed lined rotation around the SM icons when hovered
 - add an animation behind the title page
 - add my special heading title font
@@ -60,6 +52,9 @@ add the dashed lined rotation around the SM icons when hovered
     > a search drop down menu to quick select the project desired to see
 - (DEMO) - learn how to make demo/make them
 - add scrollspy
+- add a animated css background
+ https://www.sliderrevolution.com/resources/css-animated-background/
+
 
 
 EXAMPLE OF USING ANIMATIONS:
