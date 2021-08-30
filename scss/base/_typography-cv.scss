@@ -3,15 +3,21 @@
 // =============================================
 
 
+// .myDropdown--cv-work-duties-list {
+//   list-style-type: none;
+//   border: solid 1px $button-color;
+//   background-color: $button-color;
+//   padding-top: 5px;
+//   padding-bottom: 5px;
+//   padding-right: 5px;
+//   padding-left: 5px;
+//   @include main-border-style;
+// }
 .myDropdown--cv-work-duties-list {
   list-style-type: none;
-  border: solid 1px $button-color;
-  background-color: $button-color;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  @include main-border-style;
+  margin: auto;
+  margin-bottom: 10px;
+
 }
 
 .myDropdown--cv-work-duties-items {
@@ -20,8 +26,10 @@
 }
 
 
-.myDropdown--cv-edu-uni-title, .myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-company, .myDropdown--cv-work-title,
-.myDropdown--cv-cert-company, .myDropdown--cv-cert-title  {
+.myDropdown--cv-edu-uni-title, .myDropdown--cv-work-company,
+.myDropdown--cv-cert-company {
+// .myDropdown--cv-edu-uni-title, .myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-company, .myDropdown--cv-work-title,
+// .myDropdown--cv-cert-company, .myDropdown--cv-cert-title  {
 text-shadow: -1px 1px 0 , 
   1px 1px 0  black, 
   1px -1px 0 blue, 
@@ -32,9 +40,16 @@ text-shadow: -1px 1px 0 ,
   font-size: 30px;
 }
 
-.myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-title, .myDropdown--cv-cert-title {
+.myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-title, .myDropdown--cv-cert-title,
+.myDropdown--cv-work-link-title  {
   font-size: 22px;
-  text-decoration: underline;
+  // text-decoration: underline;
+  color: $button-color;
+  text-shadow: 1px 1px 0  $text-color;
+  // text-shadow: -1px 1px 0 , 
+  // 1px 1px 0  black, 
+  // 1px -1px 0 $text-color, 
+  // -1px -1px 0  white ; 
 }
 
 
@@ -44,6 +59,16 @@ text-shadow: -1px 1px 0 ,
   text-shadow: 1px 1px 0  $text-color;
   // 1px -1px 0 blue, 
   // -1px -1px 0  white ; 
+}
+
+.myDropdown--cv-work-client-website:hover {
+  background-color: $button-color;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
 }
 
 

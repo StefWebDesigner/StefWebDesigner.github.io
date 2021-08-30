@@ -32,14 +32,54 @@
 
 //======== SOCIAL MEDIA =========
 
-.sm--bigger-svg, .sm--smaller-svg {
-    transition: transform .5s ease-in-out ;
-    // transform-origin: 180px 180px;
-    // transform-box: fill-box;
+
+.svg--path, path {
+    animation: fill 6s ease-in-out infinite;
+    transform-origin: 180px 180px;
+    transform-box: fill-box;
 }
 
-.sm--bigger-svg:hover, .sm--smaller-svg:hover {
-    transform: scaleY(1.2) scaleX(1.2);
+@keyframes fill {
+    0% {
+        fill: $text-color;
+
+    }
+    50% {
+        fill: blue;
+    }
+
+    75% {
+        fill: blue;
+    }
+
+    100% {
+        fill: $text-color;
+    }
+}
+
+// @keyframes grow {
+//     0% {
+//         transform: scale(1);
+
+//     }
+//     50% {
+//         transform: scale(1.2);
+//     }
+
+//     75% {
+//         transform: scale(.9);
+//     }
+
+//     100% {
+//         transform: scale(1);
+//     }
+// }
+
+// .sm--bigger-svg:hover, .sm--smaller-svg:hover {
+//     animation: grow 3s ease-in-out alternate infinite;
+//     transform-origin: 180px 180px;
+//     transform-box: fill-box;
+
 //     @keyframes grow {
 //         0% {
 //           transform: scale(0);
@@ -53,13 +93,43 @@
 //       /*    It makes it have a fluid bouncing effect*/
       
 //         }
-}
+// }
 
-.svg--path:hover, .svg--website-group:hover {
-    transform: fill;
-    fill: blue;
+// .svg--path:hover, g.svg--website-group:hover {
+//     transform: fill;
+//     fill: blue;
+// }
 
-}
+//================================================
+
+// .sm--bigger-svg, .sm--smaller-svg {
+//     transition: transform 1s ease-in-out ;
+//     // transform-origin: 180px 180px;
+//     // transform-box: fill-box;
+// }
+
+// .sm--bigger-svg:hover, .sm--smaller-svg:hover {
+//     transform: scaleY(1.2) scaleX(1.2);
+// //     @keyframes grow {
+// //         0% {
+// //           transform: scale(0);
+// //       }
+// //         30% {
+// //           transform: scale(1.1);
+      
+// //         }
+// //         60% { 
+// //           transform: scale(0.9);
+// //       /*    It makes it have a fluid bouncing effect*/
+      
+// //         }
+// }
+
+// .svg--path:hover, g.svg--website-group:hover {
+//     transform: fill;
+//     fill: blue;
+
+
 
 
 

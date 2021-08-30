@@ -69,21 +69,16 @@ a .main--project-button {
 
 .myDropdown--cv-work-duties-list {
   list-style-type: none;
-  border: solid 1px #0780fa;
-  background-color: #0780fa;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .myDropdown--cv-work-duties-items {
   margin-top: 5px;
 }
 
-.myDropdown--cv-edu-uni-title, .myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-company, .myDropdown--cv-work-title,
-.myDropdown--cv-cert-company, .myDropdown--cv-cert-title {
+.myDropdown--cv-edu-uni-title, .myDropdown--cv-work-company,
+.myDropdown--cv-cert-company {
   text-shadow: -1px 1px 0 ,  1px 1px 0  black,  1px -1px 0 blue,  -1px -1px 0  white;
 }
 
@@ -91,15 +86,26 @@ a .main--project-button {
   font-size: 30px;
 }
 
-.myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-title, .myDropdown--cv-cert-title {
+.myDropdown--cv-edu-uni-desc, .myDropdown--cv-work-title, .myDropdown--cv-cert-title,
+.myDropdown--cv-work-link-title {
   font-size: 22px;
-  text-decoration: underline;
+  color: #0780fa;
+  text-shadow: 1px 1px 0 #17f4a8;
 }
 
 .myDropdown--cv-date, .myDropdown--cv-cert-date {
   color: #0780fa;
   font-size: 20px;
   text-shadow: 1px 1px 0 #17f4a8;
+}
+
+.myDropdown--cv-work-client-website:hover {
+  background-color: #0780fa;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 * {
@@ -399,10 +405,6 @@ a .main--project-button {
 
 /* EFFECTS THE LINKS */
 /* THIS TARGETS THE CHILD ELEMENTS'S HOVER EFFECT INSIDE OF A MENU  */
-.button--dropdown-content a:hover {
-  background-color: green;
-}
-
 /* THE SHOW CLASS*/
 .show {
   display: block;
@@ -489,22 +491,42 @@ footer {
   border: #17f4a8 solid 2px;
 }
 
-.sm--bigger-svg, .sm--smaller-svg {
-  -webkit-transition: -webkit-transform .5s ease-in-out;
-  transition: -webkit-transform .5s ease-in-out;
-  transition: transform .5s ease-in-out;
-  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+.svg--path, path {
+  -webkit-animation: fill 6s ease-in-out infinite;
+          animation: fill 6s ease-in-out infinite;
+  -webkit-transform-origin: 180px 180px;
+          transform-origin: 180px 180px;
+  transform-box: fill-box;
 }
 
-.sm--bigger-svg:hover, .sm--smaller-svg:hover {
-  -webkit-transform: scaleY(1.2) scaleX(1.2);
-          transform: scaleY(1.2) scaleX(1.2);
+@-webkit-keyframes fill {
+  0% {
+    fill: #17f4a8;
+  }
+  50% {
+    fill: blue;
+  }
+  75% {
+    fill: blue;
+  }
+  100% {
+    fill: #17f4a8;
+  }
 }
 
-.svg--path:hover, .svg--website-group:hover {
-  -webkit-transform: fill;
-          transform: fill;
-  fill: blue;
+@keyframes fill {
+  0% {
+    fill: #17f4a8;
+  }
+  50% {
+    fill: blue;
+  }
+  75% {
+    fill: blue;
+  }
+  100% {
+    fill: #17f4a8;
+  }
 }
 
 .sm--bigger-svg {
@@ -568,6 +590,7 @@ label {
   margin: auto;
   text-align: center;
   color: #17f4a8;
+  text-shadow: 1px 1px 0 #17f4a8;
 }
 
 .form--project-button {

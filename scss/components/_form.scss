@@ -45,6 +45,8 @@ label {
     margin: auto;
     text-align: center;
     color: $text-color;
+    // color: $button-color;
+    text-shadow: 1px 1px 0  $text-color;
 }
 
 .form--project-button {
