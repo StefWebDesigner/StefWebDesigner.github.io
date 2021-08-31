@@ -2,187 +2,128 @@
 // /*              @Media Breakpoints                      */
 // /* ============================================= */
 
-
 @media only screen and (min-width: 1024px) {
 
-    //========== GRID ================
-    .grid {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 50px 1fr;
-        grid-template-rows: 420px 1fr 40px;
-        // grid-template-rows: 500px 215px 1fr 40px;
-        grid-template-areas:  
-        "header header"
-        "nav main"
-        "footer footer";
-        @include background;
-    }
-    
-    header {
-        // background-color: blue;
-        grid-area: header;
-    }
-    
-    nav {
-        // background-color: red;
-        grid-area: nav;
-        margin: 0;
-    }
-    
-    main {
-        // background-color: pink;
-        grid-area: main;
-    }
-    
-    footer {
-        // background-color: purple;
-        grid-area: footer;
-    }
+//========== GRID ================
+.grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 420px 1fr 40px;
+    grid-template-areas:  
+    "header header"
+    "nav main"
+    "footer footer";
+    @include background;
+}
 
-    //========== GENERAL FONTS
+header {
+    grid-area: header;
+}
 
-    .main--title-container, 
-    .main--project-title, 
-    .form-title, 
-    .main--project-button,
-    .form--project-button,
-    .nav-proj-button,
-    a .header--button  {
-        font-size: 40px;
-        text-shadow: -1px 1px 0 , 
-            3px 2px 0  black, 
-            3px -2px 0 blue, 
-            -3px -2px 0  white ; 
-    }
+nav {
+    grid-area: nav;
+    margin: 0;
+}
 
-    .header-website-title {
-        font-size: 55px;
-    }
+main {
+    grid-area: main;
+}
 
-    //======== NAVIGATION ========
+footer {
+    grid-area: footer;
+}
 
-    // nav {
-    //     height: 100%;
-    //     flex-direction: column;
-    //     justify-content: start;
-    //     flex-basis: 100px;
+//========== GENERAL FONTS
 
-        
-    //     // justify-content: stretch;
-    
-    // }
-    
-    // .nav--container {
-    //     // flex-direction: column;
-    //     // margin-top: 115px;
-    //     // flex-basis: 100%;
-    //     // justify-content: start;
-    //     // justify-content: stretch;
-    //     // flex-basis: 100px;
+.main--title-container, 
+.main--project-title, 
+.form-title, 
+.main--project-button,
+.form--project-button,
+.nav-proj-button,
+a .header--button  {
+    font-size: 40px;
+    text-shadow: -1px 1px 0 , 
+    3px 2px 0  black, 
+    3px -2px 0 blue, 
+    -3px -2px 0  white ; 
+}
 
-    
-    // }
+.header-website-title {
+    font-size: 55px;
+}
 
-    button.button--dropdown {
-        font-size: 40px;
+button.button--dropdown {
+    font-size: 40px;
+}
 
-    }
+.nav--proj-grouping {
+    margin-top: 50px;
+}
 
-    
-    .nav--proj-grouping {
-        // flex-direction: column;
-        // justify-content: center;   
-        margin-top: 50px;
-    }
+//=========== FORM ==========
 
-    //=========== FORM ==========
+.form-socialmedia-flex-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-    .form-socialmedia-flex-container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        // justify-content: center;
-        // flex-basis: 100%;
-    }
+form {
+    flex-basis: 80%;
+}
 
-    form {
-        flex-basis: 80%;
+.form-title {
+    margin-left :50%;  
+    margin-top:20px;
+}
 
-    }
+label {
+    font-size: 35px;
+}
 
-    .form-title {
-        margin-left :50%;  
-        margin-top:20px;
-    }
+input, textarea {
+    font-size: 30px;
+}
 
-    label {
-        font-size: 35px;
-    }
+input {
+    height: 60px;   
+    width: 100%;
+}
 
-    input, textarea {
-        font-size: 30px;
+textarea {
+    font-size: 30px;
+    height: 160px;  
+    padding-top: 60px;
+    width: 100%;
+}
 
+.form--project-button {
+    width: 100%;
+}
 
-    }
-    
-    input {
-        height: 60px;   
-        width: 100%;
-    
-    }
+//======== SOCIAL MEDIA =====
 
-    textarea {
-        font-size: 30px;
-        height: 160px;  
-        padding-top: 60px;
-        width: 100%;
-    }
+.sm--bigger-svg {
+    width: 100px;
+}
 
-    .form--project-button {
-        width: 100%;
-      }
-      
+.sm--smaller-svg {
+    width: 100px;
+    height: 100px;
+}
 
-    //======== SOCIAL MEDIA =====
-
-    .sm--bigger-svg {
-        width: 100px;
-    }
-    
-    .sm--smaller-svg {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .social-media-container {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        margin: auto;
-        // justify-content: center;
-        // align-items: center;
-        // margin: auto;
-        flex-basis: 50%;
-        gap: 40px;
-    }
-
-    // .sm--bigger-svg:first-child {
-    //     margin-top: 100px;
-
-    // }
-
-
-
-
-
-
-    //=========== FOOTER ==========
-
-
+.social-media-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin: auto;
+    flex-basis: 50%;
+    gap: 40px;
+}
 
 
 }
-    

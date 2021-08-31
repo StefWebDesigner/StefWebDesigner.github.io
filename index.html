@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html class="animsition" lang="en">
+<html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Final Treehouse Front End Developer Portfolio">
-	<title> WebApp </title>
+	<title> Treehouse Front End Developer Portfolio </title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
-		<!-- Animsition CSS LINKUP -->
-	<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-	<!-- <link href="js/dist/css/animsition.min.css" rel="stylesheet"> -->
-	<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Roboto:ital@1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <!-- Body Sections -->
 <body class="grid">
-	<!-- <div class="animsition"> -->
 
 <!-- HEADER-->
-<header class="background animsition">
+<header class="background">
 	<div class="header--container">
 		<div class="cube"></div>
        <div class="cube"></div>
@@ -34,8 +28,7 @@
 			<h1 class="header-website-title">
 			Stefan's Treehouse Coding Portfolio
 			</h1>
-			<img src="images/profile-pic-closer.jpeg" alt="" class="header--profile-pic">
-		<!-- INCLUDE AN AN ANIMATED BACKGROUND TO BACK THE TITLE -->
+			<img src="images/profile-pic-closer.jpeg" alt="a picture of the author" class="header--profile-pic">
 		</div> <!-- HEADER--GROUPING END TAG -->
 
 		<div class="header--navigation">
@@ -55,36 +48,29 @@
 
 </header>
 
-
-
 <nav> 
 	<div class="nav--container">
-		<!-- <h2 class="nav--title"> All Projects </h2> -->
-
 		<div class="nav--proj-grouping">
 			<a class="nav--proj-links" href="#id--project-1">
 				<button class="nav-proj-button">1</button>
 			</a>
-			<a class="nav--proj-links" href="#id--project-2">
+			<a class="nav--proj-links" href="#id--project-3">
 				<button class="nav-proj-button">2</button>
 			</a>
-			<a class="nav--proj-links" href="#id--project-3">
+			<a class="nav--proj-links" href="#id--project-4">
 				<button class="nav-proj-button">3</button>
 			</a>
-			<a class="nav--proj-links" href="#id--project-4">
+			<a class="nav--proj-links" href="#id--project-5">
 				<button class="nav-proj-button">4</button>
 			</a>
-			<a class="nav--proj-links" href="#id--project-5">
+			<a class="nav--proj-links" href="#id--project-6">
 				<button class="nav-proj-button">5</button>
 			</a>
-			<a class="nav--proj-links" href="#id--project-6">
+			<a class="nav--proj-links" href="#id--project-7">
 				<button class="nav-proj-button">6</button>
 			</a>
-			<a class="nav--proj-links" href="#id--project-7">
-				<button class="nav-proj-button">7</button>
-			</a>
 			<a class="nav--proj-links" href="#id--project-8">
-				<button class="nav-proj-button">8</button>
+				<button class="nav-proj-button">7</button>
 			</a>
 		</div> <!-- NAV PROJ GROUPING END TAG-->
 	</div> <!-- NAV CONTAINER END TAG-->
@@ -112,12 +98,11 @@
 		<div class="main--project-container">
 			<!-- INDIVIDAL PROJECT SECTIONS -->
 			<div  id="id--project-1" class="main--project-idv-group">
-				<img src="images/project1-thumb.png" alt="" class="main--project-preview">
+				<a href="https://stefwebdesigner.github.io/project-1/" target="_blank">
+					<img src="images/project1-thumb.png" alt="a preview of the picture" class="main--project-preview">
+				</a>
 				<div class="main--project-title-description-group">
 					<h3 class="main--project-title"> Project 1</h3>
-					<p class="main--project-description">
-						<!-- Project description -->
-					</p>
 				</div>
 				<div  class="main--project-button-group">
 					<div class="button--dropdown-container">
@@ -129,44 +114,12 @@
 							</p>
 						</div>
 					</div>					
-					<a href="https://github.com/StefWebDesigner/main-project" target="_blank">
+					<a href="https://github.com/StefWebDesigner/project-1" target="_blank">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
-					<!-- <a href="">
+					<a href="https://stefwebdesigner.github.io/project-1/" target="_blank">
 						<button class="main--project-button"> Demo</button>
-					</a> -->
-				</div>
-			</div>
-
-			<div class="span--divider"> 
-				<span class="span--divider-1"></span>
-				<span class="span--divider-2"></span>
-				<span class="span--divider-3"></span>
-			</div>
-
-			<div id="id--project-2" class="main--project-idv-group">
-				<img src="images/project2-thumb.png" alt="" class="main--project-preview">
-				<div class="main--project-title-description-group">
-					<h3 class="main--project-title"> Project 2</h3>
-					<!-- <p class="main--project-description">
-						Project description
-					</p> -->
-				</div>
-				<div class="main--project-button-group">
-					<div class="button--dropdown-container">
-						<button onclick="myFunction()" class="button--dropdown">Details
-						</button>
-						<div id="myDropdown" class="button--dropdown-content">
-							<p> 
-								A project with a responsive layout and applied columns/rows							</p>
-						</div>
-					</div>	
-					<a href="https://github.com/StefWebDesigner/Turnin_Project_2_2.1" target="_blank">
-						<button class="main--project-button"> My Source Code</button>
 					</a>
-					<!-- <a href="">
-						<button class="main--project-button"> Demo</button>
-					</a> -->
 				</div>
 			</div>
 
@@ -177,9 +130,11 @@
 			</div>
 
 			<div id="id--project-3" class="main--project-idv-group">
-				<img src="images/project3-thum-2.png" alt="" class="main--project-preview">
-				<div class="main--project-title-description-group">
-					<h3 class="main--project-title"> Project 3</h3>
+				<a href="https://github.com/StefWebDesigner/project-3-final" target="_blank">
+					<img src="images/project3-thum-2.png" alt="preview picture of my form project" class="main--project-preview">
+				</a>
+					<div class="main--project-title-description-group">
+					<h3 class="main--project-title"> Project 2</h3>
 				</div>
 				<div class="main--project-button-group">
 					<div class="button--dropdown-container">
@@ -190,12 +145,12 @@
 								A project focused on creating an accessible and user-friendly online registration form 							</p>
 						</div>
 					</div>	
-					<a href="https://github.com/StefWebDesigner/project-3" target="_blank">
+					<a href="https://github.com/StefWebDesigner/project-3-final" target="_blank">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
-					<!-- <a href=""> -->
-						<!-- <button class="main--project-button" data-type="line"> Demo</button>
-					</a> -->
+					<a href="https://stefwebdesigner.github.io/project-3-final/" target="_blank">
+						<button class="main--project-button"> Demo</button>
+					</a>
 				</div>				
 			</div>
 
@@ -206,9 +161,11 @@
 			</div>
 
 			<div id="id--project-4" class="main--project-idv-group">
-				<img src="images/project4-thumb-1.png" alt="" class="main--project-preview">
+				<a href="https://stefwebdesigner.github.io/Project-4/" target="_blank">
+					<img src="images/project4-thumb-1.png" alt="a preview picture of a website which is optmized" class="main--project-preview">
+				</a>
 				<div class="main--project-title-description-group">
-					<h3 class="main--project-title"> Project 4</h3>
+					<h3 class="main--project-title"> Project 3</h3>
 				</div>
 				<div class="main--project-button-group">
 					<div class="button--dropdown-container">
@@ -216,14 +173,16 @@
 						</button>
 						<div id="myDropdown" class="button--dropdown-content">
 							<p> 
-								A project focused on laying out a website with sass styling and also grid elements with different viewports						</div>
+								A project focused on laying out a website with sass styling and also grid elements with different viewports
+								</p>						
+							</div>
 					</div>	
 					<a href="https://github.com/StefWebDesigner/Project-4" target="_blank">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
-					<!-- <a href="">
+					<a href="https://stefwebdesigner.github.io/Project-4/" target="_blank">
 						<button class="main--project-button"> Demo</button>
-					</a> -->
+					</a>
 				</div>
 			</div>
 
@@ -234,9 +193,11 @@
 			</div>
 
 			<div id="id--project-5" class="main--project-idv-group">
-				<img src="images/project5-thumb-1.png" alt="" class="main--project-preview">
+				<a href="https://stefwebdesigner.github.io/project-5/" target="_blank">
+					<img src="images/project5-thumb-1.png" alt="a preview picture of art gallery app" class="main--project-preview">
+				</a>
 				<div class="main--project-title-description-group">
-					<h3 class="main--project-title"> Project 5</h3>
+					<h3 class="main--project-title"> Project 4</h3>
 					
 				<div class="main--project-button-group">
 					<div class="button--dropdown-container">
@@ -250,9 +211,9 @@
 					<a href="https://github.com/StefWebDesigner/project-5" target="_blank">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
-					<!-- <a href="">
+					<a href="https://stefwebdesigner.github.io/project-5/" target="_blank">
 						<button class="main--project-button"> Demo</button>
-					</a> -->
+					</a>
 				</div>
 			</div>
 
@@ -264,9 +225,11 @@
 
 
 			<div id="id--project-6" class="main--project-idv-group">
-				<img src="images/project6-thumb.png" alt="" class="main--project-preview">
+				<a href="https://stefwebdesigner.github.io/project-6-fresh/" target="_blank">
+					<img src="images/project6-thumb.png" alt="a preview picture of a word game" class="main--project-preview">
+				</a>
 				<div class="main--project-title-description-group">
-					<h3 class="main--project-title"> Project 6</h3>
+					<h3 class="main--project-title"> Project 5</h3>
 				</div>
 				<div class="main--project-button-group">
 					<div class="button--dropdown-container">
@@ -281,9 +244,9 @@
 					<a href="https://github.com/StefWebDesigner/project-6-fresh" target="_blank">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
-					<!-- <a href="">
+					<a href="https://stefwebdesigner.github.io/project-6-fresh/" target="_blank">
 						<button class="main--project-button"> Demo</button>
-					</a> -->
+					</a>
 				</div>
 			</div>
 
@@ -294,9 +257,11 @@
 			</div>
 
 			<div id="id--project-7" class="main--project-idv-group">
-				<img src="" alt="" class="main--project-preview">
+				<a href="https://stefwebdesigner.github.io/project-7/" target="_blank">
+					<img src="images/project-7.png" alt="a preview picture of a social media/traffic charts app" class="main--project-preview">
+				</a>
 				<div class="main--project-title-description-group">
-					<h3 class="main--project-title"> Project 7</h3>
+					<h3 class="main--project-title"> Project 6</h3>
 					
 				</div>
 				<div class="main--project-button-group">
@@ -312,9 +277,9 @@
 					<a href="https://github.com/StefWebDesigner/project-7" target="_blank">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
-					<!-- <a href="">
+					<a href="https://stefwebdesigner.github.io/project-7/" target="_blank">
 						<button class="main--project-button"> Demo</button>
-					</a> -->
+					</a>
 				</div>
 			</div>
 
@@ -325,9 +290,11 @@
 			</div>
 
 			<div id="id--project-8" class="main--project-idv-group">
-				<img src="images/project8-thumb-1.png" alt="" class="main--project-preview">
+				<a href="https://stefwebdesigner.github.io/project-8/" target="_blank">
+					<img src="images/project8-thumb-1.png" alt="a picture of an employee directory" class="main--project-preview">
+				</a>
 				<div class="main--project-title-description-group">
-					<h3 class="main--project-title"> Project 8</h3>
+					<h3 class="main--project-title"> Project 7</h3>
 					
 				</div>
 				<div class="main--project-button-group">
@@ -342,12 +309,11 @@
 					<a href="https://github.com/StefWebDesigner/project-8" target="_blank">
 						<button class="main--project-button"> My Source Code</button>
 					</a>
-					<!-- <a href="">
+					<a href="https://stefwebdesigner.github.io/project-8/" target="_blank">
 						<button class="main--project-button"> Demo</button>
-					</a> -->
+					</a>
 				</div>
 			</div>
-
 
 		</div> <!-- MAIN PROJECT CONTAINER END TAG-->
 		
@@ -362,16 +328,15 @@
 	<div class="form-socialmedia-flex-container">
 		<div class="form--container">
 			<h2 class="form-title"> Get In Contact With Me</h2>
-			<!-- <form action="contact-form-handler.php" method="post" enctype="text/plain">  -->
 			<form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain"> 
 				<label for="name"> Name </label><br>
 				<input id="nameInput" type="text" name="name" placeholder="Johnny Appleseed"><br>
 
 				<label for="email"> Email </label><br>
-				<input id="emailInput"type="text" name="email" placeholder="Johnny.Appleseed@email.com"><br>
+				<input id="emailInput" type="text" name="email" placeholder="Johnny.Appleseed@email.com"><br>
 				
 				<label for="message"> Write a message</label><br>
-				<textarea id="messageInput" type="text" name="message" placeholder="Enter your message"></textarea><br>
+				<textarea id="messageInput" name="message" placeholder="Enter your message"></textarea><br>
 			
 				<button class="form--project-button" id="send" type="submit" name="submit" value="Submit"> Send </button>
 
@@ -388,7 +353,6 @@
 				</a>
 			</div>
 
-			
 			<div class="svg--border">
 				<a href="https://www.thestefantalkshow.com/" target="_blank">
 					<svg class="sm--bigger-svg"  viewBox="0 0 447.632 447" xmlns="http://www.w3.org/2000/svg">
@@ -414,28 +378,14 @@
 						</svg>
 				</a>
 			</div>
-
 		</div> <!--SOCIAL MEDIA CONTAINER END TAGS-->
-
 	</div> <!--FORM - SOCIAL MEDIA CONTAINER FLEX CONTAINER END TAGS-->
-
-	
 </main>
 
 <footer>
-	<p>Author: Stefan Riley</p><br>
-	<!-- <small> Copyright &copy 2020 - Company - <a href=""></a> All Rights Reserved </small> -->
+	<small> Copyright &copy 2020 - Company - <a href=""></a> All Rights Reserved </small>
 
 </footer>
-
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script> -->
-<!-- <script src="js/dist/js/animsition.min.js" charset="utf-8"></script>
-<script>
-	$(document).ready(function() {
-	$('.animsition').animsition();
-	});
-</script> -->
 
 <script src="javascript/pop-button.js"></script>
 	<script src="javascript/app.js"> </script>

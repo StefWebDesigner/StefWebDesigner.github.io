@@ -361,51 +361,30 @@ a .main--project-button {
 .button--dropdown {
   margin: auto;
   border-radius: 10px;
-  /* BACKGROUND COLOR */
   background: #96c1ed;
   background: -webkit-gradient(linear, left top, right top, from(#96c1ed), to(#0780fa));
   background: linear-gradient(90deg, #96c1ed 0%, #0780fa 100%);
-  /* FONT COLOR */
   color: #17f4a8;
-  /* PADDING FOR THE OVERALL BUTTON */
   padding-top: 10px;
   padding-bottom: 10px;
-  /* FONT SIZE FOR THE BUTTON */
   border: none;
   cursor: pointer;
 }
 
-/* DROP DOWN HOVER EFFECT */
 .button--dropdown-container {
-  /* SET THE POSITION FOR DROP DOWN CONTENT */
   position: relative;
   display: inline-block;
 }
 
-/*  DROP DOWN CONTENT SECTION*/
 .button--dropdown-content {
   display: none;
-  /* CHOSE ONE><><><><><> */
-  /* IF ABSOLUTE > IT COVERS OVER IT */
-  /* position: absolute; */
-  /* IF RELATIVE IT PUSHES IT DOWN */
   position: relative;
-  /* <><><><><><><>><><><><>>< */
-  /*CHANGES COLOR OF THE DROP DOWN MENU */
   width: 87%;
   margin: auto;
-  /* CONTROLS THE WIDTH OF THE DROP MENU */
   min-width: 160px;
-  /* ******************************************* */
-  /* ******DELETE THIS CODE IF USING LINKS****** /
-  /* ******************************************* */
-  /**********************************************/
   z-index: 1;
 }
 
-/* EFFECTS THE LINKS */
-/* THIS TARGETS THE CHILD ELEMENTS'S HOVER EFFECT INSIDE OF A MENU  */
-/* THE SHOW CLASS*/
 .show {
   display: block;
 }
@@ -443,8 +422,8 @@ particle {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 490px 1fr 40px;
-      grid-template-rows: 490px 1fr 40px;
+  -ms-grid-rows: 520px 1fr 40px;
+      grid-template-rows: 520px 1fr 40px;
       grid-template-areas: "header" "main" "footer";
   background: #128082;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #128082), color-stop(37%, #042b4d));

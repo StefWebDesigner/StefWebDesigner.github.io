@@ -1,7 +1,6 @@
 // ============================================= 
 //                  BUTTONS                      
 // =============================================
- 
 
 //======== GENERAL BUTTON RULES =========
 
@@ -12,30 +11,19 @@
 
 //========= HEADER ============
 
-// .nav--button {
 .header--button {
   width: 85%;
   border-bottom: 4px solid $text-color;
-
 }
-
 
 a .header--button {
-// a .nav--button {
-  // border-bottom: 4px solid $text-color;
-@include main-border-style; 
-cursor: pointer;
-
+  @include main-border-style; 
+  cursor: pointer;
 }
 
-// a .nav--button:hover {
 a .header--button:hover, .button--dropdown:hover {
   border-color: $chrome-grey;
 }
-
-//========= NAVIGATION ============
-
-
 
 //========= MAIN ============
 
@@ -65,90 +53,28 @@ a .main--project-button {
 .button--dropdown {
   margin: auto;
   @include main-border-style;
-  // border-bottom: 4px solid $text-color;
-
-  /* BACKGROUND COLOR */
   @include button-background;
-  /* FONT COLOR */
   color: $text-color;
-  /* PADDING FOR THE OVERALL BUTTON */
-  // width: 85%;
-  // padding-left: 105px;
-  // padding-right: 105px;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* FONT SIZE FOR THE BUTTON */
-  // font-size: 16px;
   border: none;
   cursor: pointer;
 }
 
-// .button--dropdown:hover {
-//   border-color: purple;
-
-// }
-
-/* DROP DOWN HOVER EFFECT */
-// .button--dropdown:hover, .button--dropdown:focus {
-//   // background-color: $text-color;
-//   // color: $button-color;
-// }
-
 .button--dropdown-container {
-   /* SET THE POSITION FOR DROP DOWN CONTENT */
   position: relative;
   display: inline-block;
 }
 
-/*  DROP DOWN CONTENT SECTION*/
 .button--dropdown-content {
   display: none;
-  /* CHOSE ONE><><><><><> */
-     /* IF ABSOLUTE > IT COVERS OVER IT */
-     /* position: absolute; */
-     /* IF RELATIVE IT PUSHES IT DOWN */
-     position: relative;
-     /* <><><><><><><>><><><><>>< */
-  /*CHANGES COLOR OF THE DROP DOWN MENU */
-  // background-color: $chrome-grey;
-  // background-color: blue;
-  // @include main-border-style;
-  // border: 1px solid #0780fa;
-  //TRYING TO ADD A HOVER BOX
-  // box-shadow: 50px 50px 50px  white;
+  position: relative;
   width: 87%;
   margin: auto;
-  
-  /* CONTROLS THE WIDTH OF THE DROP MENU */
   min-width: 160px;
-  /* ******************************************* */
-  /* ******DELETE THIS CODE IF USING LINKS****** /
-  /* ******************************************* */
-  // padding-top: 10px;
-  // padding-bottom: 10px;
-  // padding-left: 20px;
-  // padding-right: 20px;
-    /**********************************************/
-  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-/* EFFECTS THE LINKS */
-// .button--dropdown-content a {
-//   /* COLOR FONT OF THE CHILDREN ELEMENT OF THE MENU */
-//   color: black;
-//   /* PADDING FOR THE CHILDREN ELEMENT */
-//   padding: 12px 16px;
-//   text-decoration: none;
-//   display: block;
-// }
-
-/* THIS TARGETS THE CHILD ELEMENTS'S HOVER EFFECT INSIDE OF A MENU  */
-// .button--dropdown-content a:hover {
-//   background-color: green
-// }
-
-/* THE SHOW CLASS*/
 .show {
    display:block;
 }
@@ -156,7 +82,6 @@ a .main--project-button {
 //========= BUTTON TRANSITIONS # 1 =============
 // Particles Popper Effect
 // https://codemyui.com/square-emoji-shadow-and-line-particles-popper-effect-on-button-click/
-
 
 //========= BUTTON TRANSITIONS =============
 
@@ -170,99 +95,15 @@ particle {
     background-size: contain;
   }
 
-  // button {
-  //   padding: 20px;
-  //   margin: 10px;
-  //   align-self: center;
-  // }
   .transition {
     padding: 10px;
     margin: 10px;
     align-self: center;
-   @include button-background;
+    @include button-background;
     @include main-border-style;
   }
+
   .preloader {
     position: absolute;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png);
   }
-
-
-  //========= BUTTON TRANSITIONS # 2 =============
-
-  //https://omprakash-76044.medium.com/attractive-glowing-neon-css-buttons-34b4c4bbe3a6
-
-  // =============== PROJECT BUTTIONS ================
-
-
-//   @mixin center($extend: true) {
-//     @if $extend {
-//         @extend %center;
-//     } @else {
-//         position: relative;
-//         left: 50%;
-//         top: 50%;
-//         transform: translateX(-50%) translateY(-50%);
-//     }
-// }
-
-// %center {
-//     @include center($extend: false);
-// }
-
-// // body{
-// //   background: #111;
-// // }
-
-// .main--project-button { 
-// justify-content: center;  // margin: auto;
-//   @include center;
-//   @include button-background;
-//   color: #ccc;
-//   border: 0;
-//   transition: .6s;
-//   overflow: hidden;
-//   &:focus{
-//     outline: 0;
-//   }
-//   &:before{
-//     content: '';
-//     display: block;
-//     position: absolute;
-//     background: rgba(255,255,255,0.5);
-//     width: 60px;
-//     height: 100%;
-//     left: 0;
-//     top: 0;
-//     opacity: .5;
-//     filter: blur(30px);
-//     transform: translateX(-100px)  skewX(-15deg);
-//   }
-//   &:after{
-//     content: '';
-//     display: block;
-//     position: absolute;
-//     background: rgba(255,255,255,0.2);
-//     width: 30px;
-//     height: 100%;
-//     left: 30px;
-//     top: 0;
-//     opacity: 0;
-//     filter: blur(5px);
-//     transform: translateX(-100px) skewX(-15deg);
-//   }
-//   &:hover{
-//     background: #338033;
-//     cursor: pointer;
-//     &:before{
-//       transform: translateX(300px)  skewX(-15deg);  
-//       opacity: 0.6;
-//       transition: .7s;
-//     }
-//     &:after{
-//       transform: translateX(300px) skewX(-15deg);  
-//       opacity: 1;
-//       transition: .7s;
-//     }
-//   }
-// }

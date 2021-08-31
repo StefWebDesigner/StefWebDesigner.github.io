@@ -1,28 +1,18 @@
-
 -------------------------------
 
 OBSERVATIONS:
-- If a text is not centering with text-align:center its because 
-it's flex
 -------------------------------
 
 TOP PRIORITIES:
-- make it aris approved
+- have it validated ()
 
 -------------------------------
 ERRORS/PROBLEMS:
-(HTML) -> other project errors
-- fix project 2 floating picture
-
+(HTML)
 (MOBILE : HOME)
-- footer > html content is not updating after saving the file
-
 (MOBILE : CV)
-
 (TABLET)
-
 (DESKTOP)
-
 (JS)
 - button class="form--project-button" id="send"> send message to email automatically
 https://mailtrap.io/blog/javascript-send-email/
@@ -30,13 +20,21 @@ https://mailtrap.io/blog/javascript-send-email/
 -------------------------------
 REPO UDPATES NOTES:
 (CSS : HOME)
+- files are cleaner/dry
 (CSS : CV)
-- added hover effect to search links
 (js)
 (HTML : HOME)
-(HTML : CV)
--- add cv social media links
+- add project gh-page files
+- made project 9 to user page thing
+- add project 7 picture
+- connect picture with gh-pages links
+- fixed minor bug on [project 5]
+- footer is updated
+- added aris to pictures
+- get live projects on 3 (giving me problems)
 
+
+(HTML : CV)
 
 -------------------------------
 
@@ -56,7 +54,7 @@ add the dashed lined rotation around the SM icons when hovered
  https://www.sliderrevolution.com/resources/css-animated-background/
 
 
-
+----------------------------------------
 EXAMPLE OF USING ANIMATIONS:
 .bell-icon,
 nav svg {
@@ -111,29 +109,21 @@ nav svg {
   }
 }
 
+----------------------------------------
 
-
+https://codemyui.com/square-emoji-shadow-and-line-particles-popper-effect-on-button-click/
 
 https://codemyui.com/square-emoji-shadow-and-line-particles-popper-effect-on-button-click/
 
-https://codemyui.com/square-emoji-shadow-and-line-particles-popper-effect-on-button-click/
+
+----------------------------------------
 
 THINGS TO COMPLETE FOR FINISHING:
 - make it aris accessible to leave a good impression
-
-
-
-
-
 https://codepen.io/robson_muniz/pen/BaygbQY
-
-
 https://omprakash-76044.medium.com/attractive-glowing-neon-css-buttons-34b4c4bbe3a6
 
-
-
-
-
+----------------------------------------
 
 Other cool neon ideas:
 https://codemyui.com/cursive-text-neon-text-effect/
@@ -145,5 +135,4 @@ https://codemyui.com/pure-css-social-share-icon-hover-animation/
 https://codemyui.com/button-hover-slide-to-reveal-social-icons/
 https://codemyui.com/floating-icons-left-border-pure-css/
 https://codemyui.com/pure-css-shining-button-hover-animation/
-
 https://codemyui.com/rounded-corner-social-buttons-in-css/
