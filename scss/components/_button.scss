@@ -33,18 +33,55 @@ a .header--button:hover, .button--dropdown:hover {
   @include button-background;
   @include main-border-style;
   border-bottom: 4px solid $text-color;
-  cursor: pointer;
+  // text-align: center;
 }
+
+.main--project-button .main--project-button-font {
+  text-align: center;
+  margin: auto;
+}
+
+
+
+// a .main--project-button {
+//   justify-content: center;
+//   color: $text-color;
+//   text-decoration-style: none;
+// }
+
+// a .main--project-button-group {
+//   margin: auto;
+
+// }
+
+//===================
+
+
+// a .main--project-button {
+// margin:auto;
+// text-align: center;
+// // margin-left: 100px;
+
+// }
+
+// .main--project-button {
+//   margin:auto;
+//   text-align: center;
+//   }
+
+// .main--project-button {
+//   margin: auto;
+//   padding: 10px;
+//   @include button-background;
+//   @include main-border-style;
+//   border-bottom: 4px solid $text-color;
+//   cursor: pointer;
+// }
 
 .main--project-button:hover {
   border-color: $chrome-grey;
 }
 
-a .main--project-button {
-  justify-content: center;
-  color: $text-color;
-  text-decoration-style: none;
-}
 
 
 //============DROP DOWN SECTION========

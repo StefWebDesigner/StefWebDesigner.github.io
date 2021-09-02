@@ -1,3 +1,7 @@
+
+Duplicate mydropdown id's error
+
+
 -------------------------------
 
 OBSERVATIONS:
@@ -20,18 +24,9 @@ https://mailtrap.io/blog/javascript-send-email/
 -------------------------------
 REPO UDPATES NOTES:
 (CSS : HOME)
-- files are cleaner/dry
 (CSS : CV)
 (js)
 (HTML : HOME)
-- add project gh-page files
-- made project 9 to user page thing
-- add project 7 picture
-- connect picture with gh-pages links
-- fixed minor bug on [project 5]
-- footer is updated
-- added aris to pictures
-- get live projects on 3 (giving me problems)
 
 
 (HTML : CV)

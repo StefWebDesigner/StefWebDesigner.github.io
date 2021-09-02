@@ -2,14 +2,15 @@
 // /*              @Media Breakpoints                      */
 // /* ============================================= */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
+// @media only screen and (min-width: 1024px) {
 
 //========== GRID ================
 .grid {
     height: 100%;
     display: grid;
     grid-template-columns: 50px 1fr;
-    grid-template-rows: 420px 1fr 40px;
+    grid-template-rows: 440px 1fr 40px;
     grid-template-areas:  
     "header header"
     "nav main"
@@ -34,6 +35,11 @@ footer {
     grid-area: footer;
 }
 
+// .header-website-title {
+//     color: red;
+// }
+
+
 //========== GENERAL FONTS
 
 .main--title-container, 
@@ -42,7 +48,7 @@ footer {
 .main--project-button,
 .form--project-button,
 .nav-proj-button,
-a .header--button  {
+.header--button  {
     font-size: 40px;
     text-shadow: -1px 1px 0 , 
     3px 2px 0  black, 

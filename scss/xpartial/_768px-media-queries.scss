@@ -2,19 +2,21 @@
 // /*              @Media Breakpoints                      */
 // /* ============================================= */
 
-@media only screen and (min-width: 768px) {
+// @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 614px) {
+
 
 //========== GRID ================
 .grid {
     height: 100%;
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 75px 1fr;
     grid-template-rows: 420px 1fr 40px;
     grid-template-areas:  
     "header header"
     "nav main"
     "footer footer";
-    @include background;
+    // @include background;
 }
 
 header {
@@ -34,6 +36,12 @@ footer {
     grid-area: footer;
 }
 
+// .header-website-title {
+//     color: red;
+// }
+
+
+
 //========== GENERAL RULES ================
 
 .header-website-title, 
@@ -41,7 +49,7 @@ footer {
 .main--project-title, 
 .form-title, 
 .main--project-button,
-.nav-proj-button,
+.nav--proj-links,
 a .header--button,
 .button--dropdown  {
 text-shadow: -1px 1px 0 , 
@@ -54,6 +62,16 @@ text-shadow: -1px 1px 0 ,
     padding: 10px;
 
 }
+
+
+// .header--button {
+//     width: 50%;
+// }
+
+// .main--project-button, 
+// .button--dropdown {
+//   width: 75%;
+// }
 
 //========== HEADER =====================
 
@@ -80,7 +98,7 @@ header {
     flex-basis: 100%;
 }
 
-a .header--button {
+.header--button {
     font-size: 30px;
 }
 
@@ -111,6 +129,10 @@ nav {
     height: 100%;
     flex-direction: column;
     justify-content: start;
+//THIS WORK BUT REQUIRES IT COVERING EVERYTHIGN!
+//ITS ALREADY BREAKING
+    //   position: fixed;
+//   top: 20%;
 }
 
 .nav--container {
@@ -122,7 +144,7 @@ nav {
     flex-direction: column;
 }
 
-.nav-proj-button {
+.nav--proj-links {
     font-size: 45px;
     color: $text-color;
     border-radius: 50%;
@@ -131,7 +153,18 @@ nav {
     height: 75px;
     padding-top: 10px;
     justify-content: center;
+    background-color: #ddd;
 }
+// .nav-proj-button {
+//     font-size: 45px;
+//     color: $text-color;
+//     border-radius: 50%;
+//     border: solid 1px $chrome-grey;
+//     width: 80px;
+//     height: 75px;
+//     padding-top: 10px;
+//     justify-content: center;
+// }
 
 .nav--proj-links {
     margin: auto;

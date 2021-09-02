@@ -15,7 +15,7 @@ a {
 .form-title,
 .main--project-button,
 .nav-proj-button,
-a .header--button,
+.header--button,
 .button--dropdown {
   text-shadow: -1px 1px 0 ,  1px 1px 0  black,  1px -1px 0 blue,  -1px -1px 0  white;
 }
@@ -26,9 +26,8 @@ a .header--button,
   color: #17f4a8;
 }
 
-.main--project-button, button.button--dropdown, a .header--button {
+.main--project-button, button.button--dropdown, .header--button {
   font-size: 25px;
-  text-align: center;
 }
 
 a .header--button {
@@ -53,10 +52,6 @@ a .header--button {
 .main--title-container,
 .main--project-title,
 .main--project-description {
-  text-align: center;
-}
-
-a .main--project-button {
   text-align: center;
 }
 
@@ -341,20 +336,15 @@ a .header--button:hover, .button--dropdown:hover {
   background: linear-gradient(90deg, #96c1ed 0%, #0780fa 100%);
   border-radius: 10px;
   border-bottom: 4px solid #17f4a8;
-  cursor: pointer;
+}
+
+.main--project-button .main--project-button-font {
+  text-align: center;
+  margin: auto;
 }
 
 .main--project-button:hover {
   border-color: #94989c;
-}
-
-a .main--project-button {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #17f4a8;
-  -webkit-text-decoration-style: none;
-          text-decoration-style: none;
 }
 
 /* DROP BUTTON CODE */
@@ -482,10 +472,10 @@ footer {
   0% {
     fill: #17f4a8;
   }
-  50% {
+  25% {
     fill: blue;
   }
-  75% {
+  35% {
     fill: blue;
   }
   100% {
@@ -497,10 +487,10 @@ footer {
   0% {
     fill: #17f4a8;
   }
-  50% {
+  25% {
     fill: blue;
   }
-  75% {
+  35% {
     fill: blue;
   }
   100% {
@@ -687,7 +677,9 @@ main {
 .main--project-idv-group,
 .main--project-button,
 .button--dropdown-container,
-.button--dropdown {
+.button--dropdown,
+a .main--project-button,
+.main--project-button-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,9 +716,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .button--dropdown-container {
@@ -802,19 +794,16 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 614px) {
   .grid {
     height: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50px 1fr;
-        grid-template-columns: 50px 1fr;
+    -ms-grid-columns: 75px 1fr;
+        grid-template-columns: 75px 1fr;
     -ms-grid-rows: 420px 1fr 40px;
         grid-template-rows: 420px 1fr 40px;
         grid-template-areas: "header header" "nav main" "footer footer";
-    background: #128082;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #128082), color-stop(37%, #042b4d));
-    background: linear-gradient(0deg, #128082 10%, #042b4d 37%);
   }
   header {
     -ms-grid-row: 1;
@@ -844,7 +833,7 @@ footer {
   .main--project-title,
   .form-title,
   .main--project-button,
-  .nav-proj-button,
+  .nav--proj-links,
   a .header--button,
   .button--dropdown {
     text-shadow: -1px 1px 0 ,  2px 2px 0  black,  2px -2px 0 blue,  -2px -2px 0  white;
@@ -889,7 +878,7 @@ footer {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  a .header--button {
+  .header--button {
     font-size: 30px;
   }
   .header--profile-pic {
@@ -932,7 +921,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .nav-proj-button {
+  .nav--proj-links {
     font-size: 45px;
     color: #17f4a8;
     border-radius: 50%;
@@ -943,6 +932,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: #ddd;
   }
   .nav--proj-links {
     margin: auto;
@@ -985,15 +975,15 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   .grid {
     height: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50px 1fr;
         grid-template-columns: 50px 1fr;
-    -ms-grid-rows: 420px 1fr 40px;
-        grid-template-rows: 420px 1fr 40px;
+    -ms-grid-rows: 440px 1fr 40px;
+        grid-template-rows: 440px 1fr 40px;
         grid-template-areas: "header header" "nav main" "footer footer";
     background: #128082;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #128082), color-stop(37%, #042b4d));
@@ -1028,7 +1018,7 @@ footer {
   .main--project-button,
   .form--project-button,
   .nav-proj-button,
-  a .header--button {
+  .header--button {
     font-size: 40px;
     text-shadow: -1px 1px 0 ,  3px 2px 0  black,  3px -2px 0 blue,  -3px -2px 0  white;
   }

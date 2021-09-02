@@ -86,6 +86,6 @@ function pop (e) {
   }
   
   if (document.body.animate) {
-    document.querySelectorAll('button').forEach(button => button.addEventListener('click', pop));
+    document.querySelectorAll('a').forEach(button => button.addEventListener('click', pop));
   }
   

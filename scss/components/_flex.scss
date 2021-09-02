@@ -101,7 +101,11 @@ main {
 .main--project-idv-group,
 .main--project-button,
 .button--dropdown-container,
-.button--dropdown {
+.button--dropdown,
+a .main--project-button,
+// .main--project-title-description-group,
+.main--project-button-group
+ {
     display: flex;
 }
 
@@ -116,6 +120,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
+    // justify-content: center;
 }
 
 .main--project-idv-group {
@@ -125,9 +130,15 @@ main {
 
 .main--project-button-group {
     flex-direction: column;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    // text-align: center;
 }
+
+// a .main--project-button-group {
+// background-color: blueviolet;
+// color: red;
+// padding-left: 1066px;
+// }
 //-------- DROP DOWN MENU ------------
 
 .button--dropdown-container {

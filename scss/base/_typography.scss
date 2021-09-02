@@ -23,7 +23,8 @@ a {
 .form-title, 
 .main--project-button,
 .nav-proj-button,
-a .header--button,
+.header--button,
+// a .header--button,
 .button--dropdown  {
 text-shadow: -1px 1px 0 , 
   1px 1px 0  black, 
@@ -41,9 +42,9 @@ text-shadow: -1px 1px 0 ,
 
 //======  BUTTON IN GENERAL ====
 
-.main--project-button, button.button--dropdown, a .header--button {
+.main--project-button, button.button--dropdown, .header--button {
   font-size: 25px;
-  text-align: center;
+  // text-align: center;
 }
 
 // ===== NAVIGATION ======
@@ -78,9 +79,10 @@ a .header--button {
     text-align: center;
 }
 
-a .main--project-button {
-  text-align: center;
-}
+// .main--project-button {
+//   text-align: center;
+// }
+
 
 .button--dropdown-content p {
   margin-top: 10px;
