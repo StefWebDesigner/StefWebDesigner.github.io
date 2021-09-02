@@ -33,17 +33,13 @@
 		</div> <!-- HEADER--GROUPING END TAG -->
 
 		<div class="header--navigation">
-			<a href="../index.html">
-				<button class="header--button transition" data-type="square">Home</button>
-			</a>
-			<a href="../html/cv.html" target="_blank">
-				<button class="header--button transition" data-type="square">My CV</button>
-			</a>
-			<a href="https://www.linkedin.com/in/stefan-riley-83a7b462/" target="_blank">
-				<button class="header--button transition" data-type="square">Linkedin</button>
-			</a>
-			<span class="preloader"></span>
-		</div>				
+            <div class="header--navigation">
+                <a href="../index.html" class="header--button transition" target="_blank" data-type="square">Home</a>
+                <a href="../html/cv.html" class="header--button transition" data-type="square" target="_blank">CV</a>
+                <a href="../https://www.linkedin.com/in/stefan-riley-83a7b462/" target="_blank" class="header--button transition" data-type="square">Linkedin</a>
+                <span class="preloader"></span>
+            </div> 		
+    </div>
 
 	</div> <!-- HEADER-CONTAINER END TAG -->
 
@@ -71,7 +67,7 @@
             <div class="button--dropdown-container">
                 <button onclick="myFunction()" class="button--dropdown">About Me
                 </button>
-                <div id="myDropdown" class="button--dropdown-content">
+                <div class="button--dropdown-content">
                     <p class="myDropdown--cv-aboutme"> I'm Stefan, a Front End Developer. I studied an MSc in Marketing and Strategy with merits from Kingston University, UK, and a BA in Spanish, Business, Psychology, and programming courses from Mercer University.  Also, I'm passionate about coding my Front End Development Tech Degree from Team Treehouse, which pushed me to work as a web developer freelancer and looking for a full-time front-end web developer position.  
                     </p>
                 </div>
@@ -82,7 +78,7 @@
             <div class="button--dropdown-container">
                 <button onclick="myFunction()" class="button--dropdown">Education
                 </button>
-                <div id="myDropdown" class="button--dropdown-content">
+                <div class="button--dropdown-content">
                     <div class="myDropdown--cv-edu-group">
                         <img src="../images/kingston-uni-logo.jpg" alt="an image of Kingston Univerity's logo" class="myDropdown--cv-edu-img">
                         <h2 class="myDropdown--cv-edu-uni-title"> Kingston University</h2>
@@ -111,7 +107,7 @@
             <div class="button--dropdown-container">
                 <button onclick="myFunction()" class="button--dropdown">Work Experience
                 </button>
-                <div id="myDropdown" class="button--dropdown-content">
+                <div class="button--dropdown-content">
                     <div class="myDropdown--cv-work-group">
                         <h2 class="myDropdown--cv-work-company"> Freelancer</h2>
                         <h2 class="myDropdown--cv-work-title"> Front End Web Designer</h2>
@@ -288,7 +284,7 @@
             <div class="button--dropdown-container">
                 <button onclick="myFunction()" class="button--dropdown"> Licenses & Certifications
                 </button>
-                <div id="myDropdown" class="button--dropdown-content">
+                <div class="button--dropdown-content">
                     <div class="myDropdown--cv-cert-group">
                         <img src="../images/Treehouse-logo_Social.png" alt="an image of the treehouse logo" class="myDropdown--cv-cert-img">
                         <h2 class="myDropdown--cv-cert-company">
@@ -369,14 +365,14 @@
 			<h2 class="form-title"> Get In Contact With Me</h2>
 			<!-- <form action="contact-form-handler.php" method="post" enctype="text/plain">  -->
 			<form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain"> 
-				<label for="name"> Name </label><br>
+				<label for="nameInput"> Name </label><br>
 				<input id="nameInput" type="text" name="name" placeholder="Johnny Appleseed"><br>
 
-				<label for="email"> Email </label><br>
-				<input id="emailInput"type="text" name="email" placeholder="Johnny.Appleseed@email.com"><br>
+				<label for="emailInput"> Email </label><br>
+				<input id="emailInput" type="text" name="email" placeholder="Johnny.Appleseed@email.com"><br>
 				
-				<label for="message"> Write a message</label><br>
-				<textarea id="messageInput" type="text" name="message" placeholder="Enter your message"></textarea><br>
+				<label for="messageInput"> Write a message</label><br>
+				<textarea id="messageInput" name="message" placeholder="Enter your message"></textarea><br>
 			
 				<button class="form--project-button" id="send" type="submit" name="submit" value="Submit"> Send </button>
 
@@ -405,7 +401,6 @@
 					</g>
 				</svg>
 			</a>
-			</a>
 				<a href=" https://www.linkedin.com/in/stefan-riley-83a7b462/" target="_blank">
                     <svg class="sm--smaller-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 					    <path class="svg--path" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -416,7 +411,7 @@
 </main>
 
 <footer>
-    <small> Copyright &copy 2020 - Company - <a href=""></a> All Rights Reserved </small>
+    <small> Copyright &copy; 2020 - Company - <a href=""></a> All Rights Reserved </small>
 </footer>
 
 	<script src="../javascript/pop-button.js"></script>
